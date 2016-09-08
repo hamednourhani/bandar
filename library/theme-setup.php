@@ -33,7 +33,7 @@ function itstar_ahoy() {
     // clean up gallery output in wp
     add_filter( 'gallery_style', 'itstar_gallery_style' );
 
-    
+
     // ie conditional wrapper
 
     // launching this stuff after theme setup
@@ -51,6 +51,9 @@ function itstar_ahoy() {
 
     //hide admin for anonymous users
     add_filter( 'show_admin_bar' , 'itstar_disable_admin_bar');
+
+    //disable wordpress update notify
+    add_action('admin_menu','itstar_wphidenag');
 
     add_filter('pre_get_posts','itstar_SearchFilter');
 
@@ -74,35 +77,21 @@ add_action( 'after_setup_theme', 'itstar_ahoy' );
 
 // Thumbnail sizes
 add_image_size( 'slider', 960, 500, array( 'center', 'center' ) );
-add_image_size( 'video-thumb', 150, 80, array( 'center', 'center' ) );
-add_image_size( 'video-larg-thumb', 400, 200, array( 'center', 'center' ) );
-add_image_size( 'page-thumb', 200, 200, array( 'center', 'center' ) );
 add_image_size( 'post-thumb', 150, 150, array( 'center', 'center' ) );
 add_image_size( 'post-banner', 960, 300, array( 'center', 'center' ) );
-add_image_size( 'item-thumb', 80, 80, array( 'center', 'center' ) );
+
 
 
 add_filter( 'image_size_names_choose', 'itstar_custom_image_sizes' );
-
 function itstar_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'slider' => __('960px by 500px'),
-        'video-thumb' => __('150px by 100px'),
-        'video-larg-thumb' => __('240px by 180px'),
-        'page-thumb' => __('200px by 200px'),
         'post-thumb' => __('150px by 150px'),
         'post-banner' => __('960px by 300px'),
-        'item-thumb' => __('80px by 80px'),
+
 
     ) );
 }
-
-// Enable support for HTML5 markup.
-add_theme_support( 'html5', array(
-    'comment-list',
-    'search-form',
-    'comment-form'
-) );
 
 /*********************
 THEME SUPPORT
@@ -147,6 +136,13 @@ function itstar_theme_support() {
             'chat'               // chat transcript
         )
     );
+
+    // Enable support for HTML5 markup.
+    add_theme_support( 'html5', array(
+        'comment-list',
+        'search-form',
+        'comment-form'
+    ) );
 
     // wp menus
     add_theme_support( 'menus' );
@@ -427,6 +423,11 @@ function itstar_disable_admin_bar(){
     if(!is_admin()){
         return false;
     }
+}
+
+
+function itstar_wphidenag() {
+    remove_action( 'admin_notices', 'update_nag', 3 );
 }
 
 ?>
