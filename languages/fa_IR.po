@@ -1,0 +1,1571 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress theme\n"
+"POT-Creation-Date: 2016-08-29 18:06+0430\n"
+"PO-Revision-Date: 2016-08-29 18:09+0430\n"
+"Last-Translator: \n"
+"Language-Team: iTstar <itstar@gmail.com>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: library/cmb\n"
+"X-Poedit-SearchPathExcluded-2: .sass-cache\n"
+
+#: 404.php:15
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "متاسفانه صفحه مورد نظر یافت نشد"
+
+#: 404.php:16
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"به نظر می رسد صفحه ای که به دنبال آن هستید یافت نشد جستجو می تواند به شما "
+"کمک نماید."
+
+#: comments.php:18
+#, php-format
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr "%1$s دیدگاه برای  &ldquo;%2$s&rdquo;"
+
+#: comments.php:28
+msgid "Reply<i class=\" fa fa-mail-reply\"></i>"
+msgstr "<i class=\" fa fa-mail-reply\"></i> پاسخ"
+
+#: comments.php:34
+msgid "<i class=\"icon-left-open\"></i> Older Comments"
+msgstr "دیدگاه های قدیمی تر"
+
+#: comments.php:35
+msgid "Newer Comments <i class=\"icon-right-open\"></i>"
+msgstr "دیدگاه های جدید تر"
+
+#: comments.php:40
+msgid "Comments are closed."
+msgstr "دیدگاه ها بسته است."
+
+#: footer.php:11
+msgid "TopArous © 2016. All rights reserved."
+msgstr "تاپ عروس © 2016 . تمامی حقوق محفوظ می باشد."
+
+#: functions.php:348
+msgid "960px by 500px"
+msgstr ""
+
+#: functions.php:349
+msgid "150px by 100px"
+msgstr ""
+
+#: functions.php:350
+msgid "240px by 180px"
+msgstr ""
+
+#: functions.php:351
+msgid "200px by 200px"
+msgstr ""
+
+#: functions.php:352
+msgid "150px by 150px"
+msgstr ""
+
+#: functions.php:353
+msgid "960px by 300px"
+msgstr ""
+
+#: functions.php:354
+msgid "80px by 80px"
+msgstr ""
+
+#: functions.php:374
+msgid "Sidebar"
+msgstr "ستون کناری"
+
+#: functions.php:375
+msgid "The first (primary) sidebar."
+msgstr "ستون کناری"
+
+#: functions.php:383
+msgid "Footer First"
+msgstr "اولین ستون پانوشت"
+
+#: functions.php:384 functions.php:393 functions.php:402 functions.php:411
+msgid "The first footer widget area"
+msgstr "اولین ستون ابزارک های پانوشت"
+
+#: functions.php:392
+msgid "Footer First Col2"
+msgstr "دومین ستون پانوشت"
+
+#: functions.php:401
+msgid "Footer First Col3"
+msgstr "سومین ستون پانوشت"
+
+#: functions.php:410
+msgid "Footer First Col4"
+msgstr "چهارمین ستون پانوشت"
+
+#: functions.php:419
+msgid "Ad Sidebar"
+msgstr "تبلیغات هدر"
+
+#: functions.php:420
+msgid "sidebar for ads"
+msgstr "بخش تبلیغات هدر سایت"
+
+#: functions.php:451
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr ""
+
+#: functions.php:451
+msgid "(Edit)"
+msgstr "(ویرایش)"
+
+#: functions.php:452
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:457
+msgid "Your comment is awaiting moderation."
+msgstr "دیدگاه شما در دست بررسی است."
+
+#: functions.php:481 functions.php:491
+msgid "<i class=\"fa fa-angle-double-left\"></i>"
+msgstr "<i class=\"fa fa-angle-double-right\"></i>"
+
+#: functions.php:482 functions.php:492
+msgid "<i class=\"fa fa-angle-double-right\"></i>"
+msgstr "<i class=\"fa fa-angle-double-left\"></i>"
+
+#: functions.php:537
+msgid "Last video Widget"
+msgstr "ابزارک آخرین ویدئوها"
+
+#: functions.php:540
+msgid "Display Last Products"
+msgstr "نمایش آخرین محصولات"
+
+#: functions.php:573
+msgid "more videos"
+msgstr "ویدئوهای بیشتر"
+
+#: functions.php:595
+msgid "Last Video"
+msgstr "آخرین ویدئوها"
+
+#: functions.php:610 functions.php:721 functions.php:807
+msgid "Title:"
+msgstr "عنوان : "
+
+#: functions.php:614
+msgid "video Numbers :"
+msgstr "تعداد ویدئوها : "
+
+#: functions.php:618
+msgid "video Category :"
+msgstr "دسته بندی ویدئو ها: "
+
+#: functions.php:653
+msgid "Last Posts By Category Widget"
+msgstr "نمایش آخرین پست های یک دسته بندی "
+
+#: functions.php:656
+msgid "Display Last Posts in Category"
+msgstr "نمایش آخرین پست های یک دسته بندی "
+
+#: functions.php:706
+msgid "Last Posts"
+msgstr "آخرین پست ها"
+
+#: functions.php:725
+msgid "Post Numbers :"
+msgstr "تعداد پست ها: "
+
+#: functions.php:729
+msgid "Post Category :"
+msgstr "دسته بندی پست : "
+
+#: functions.php:759
+msgid "Simple Button Widget"
+msgstr "ابزارک دکمه ساده"
+
+#: functions.php:762
+msgid "make simple button"
+msgstr "ساخت یک دکمه ساده"
+
+#: functions.php:797
+msgid "Advance Search Button"
+msgstr "جستجوی پیشرفته"
+
+#: functions.php:811
+msgid "Button Title :"
+msgstr "عنوان دکمه : "
+
+#: functions.php:816
+msgid "Button Link :"
+msgstr "لینک دکمه :"
+
+#: functions.php:1099
+msgid "Another user have been registered by this User Name or Email"
+msgstr ""
+"کاربر دیگری با این مشخصات عضو شده است لطفا مشخصات کاربری خود را تغییر دهید"
+
+#: functions.php:1103
+msgid "Anti Spam is Not correct!"
+msgstr "کد امنیتی صحیح نمی باشد!"
+
+#: functions.php:1107
+msgid "Please fill the required fields : User Name - Email - Password"
+msgstr "لطفا فیلد های ضروری را تکمیل نمایید : نام کاربری - ایمیل - کلمه عبور"
+
+#: functions.php:1153
+msgid "Vira Club Registeration"
+msgstr "عضویت در ویرا کلاب"
+
+#: functions.php:1154
+msgid "Login to Site"
+msgstr "ورود به سایت "
+
+#: functions.php:1161
+msgid "First Name"
+msgstr "نام "
+
+#: functions.php:1162
+msgid "Last Name"
+msgstr "نام خانوادگی "
+
+#: functions.php:1163
+msgid "UserName"
+msgstr "شناسه کاربری "
+
+#: functions.php:1164
+msgid "Birthday"
+msgstr "روز تولد"
+
+#: functions.php:1166 functions.php:1358
+msgid "Birth Month"
+msgstr "ماه تولد"
+
+#: functions.php:1168 functions.php:1366
+msgid "Birth Year"
+msgstr "سال تولد"
+
+#: functions.php:1170 functions.php:1382
+msgid "Job"
+msgstr "شغل"
+
+#: functions.php:1171 functions.php:1374 functions.php:1491
+msgid "Phone"
+msgstr "تلفن"
+
+#: functions.php:1173 functions.php:1492
+msgid "Email"
+msgstr "ایمیل"
+
+#: functions.php:1174
+msgid "Password"
+msgstr "کلمه عبور"
+
+#: functions.php:1175
+msgid "At least 6 character."
+msgstr "حداقل 6 کارکتر"
+
+#: functions.php:1178
+msgid "Submit"
+msgstr "تایید"
+
+#: functions.php:1213
+msgid "User Profile"
+msgstr "پروفایل کاربر"
+
+#: functions.php:1217
+msgid "first name: "
+msgstr "نام : "
+
+#: functions.php:1218
+msgid "last name: "
+msgstr "نام خانوادگی : "
+
+#: functions.php:1219 functions.php:1443 functions.php:1475
+msgid "Username: "
+msgstr "شناسه کاربری : "
+
+#: functions.php:1221
+msgid "Birthday: "
+msgstr "روز تولد : "
+
+#: functions.php:1222
+msgid "Phone: "
+msgstr "تلفن : "
+
+#: functions.php:1223
+msgid "Email: "
+msgstr "ایمیل : "
+
+#: functions.php:1224
+msgid "Job: "
+msgstr "شغل : "
+
+#: functions.php:1226
+msgid "Vira Club ID: "
+msgstr "آی دی ویرا کلاب : "
+
+#: functions.php:1229
+msgid "Logout"
+msgstr "خروج "
+
+#: functions.php:1260
+msgid "Title"
+msgstr "عنوان "
+
+#: functions.php:1347
+msgid "Extra profile information"
+msgstr "اطلاعات اضافی پروفایل "
+
+#: functions.php:1350
+msgid "birthday"
+msgstr "روز تولد"
+
+#: functions.php:1354
+msgid "Please enter your Birthday."
+msgstr "لطفا روز تولد خود را وارد نمایید ."
+
+#: functions.php:1362
+msgid "Please enter your Birth Month."
+msgstr "لطفا ماه تولد خود را وارد نمایید "
+
+#: functions.php:1370
+msgid "Please enter your Birth Year."
+msgstr "لطفا سال تولد خود را وارد نمایید."
+
+#: functions.php:1378
+msgid "Please enter your phone."
+msgstr "لطفا تلفن خود را وارد نمایید "
+
+#: functions.php:1386
+msgid "Please enter your Job."
+msgstr "لطفا شغل خود را وارد نمایید "
+
+#: functions.php:1390
+msgid "Vira club ID"
+msgstr "آی دی ویرا کلاب"
+
+#: functions.php:1441
+msgid "New User Have Registered "
+msgstr "کاربر جدید عضو سایت شد"
+
+#: functions.php:1445 functions.php:1477
+msgid "Password: "
+msgstr "کلمه عبور : "
+
+#: functions.php:1447 functions.php:1479
+msgid "ViraClub ID: "
+msgstr "آی دی ویرا کلاب : "
+
+#: functions.php:1470
+msgid "Welcome to "
+msgstr "خوش آمدید به "
+
+#: functions.php:1471
+msgid "Hello,"
+msgstr "سالم "
+
+#: functions.php:1473
+msgid "Welcome to Our Site"
+msgstr "به سایت ما خوش آمدید"
+
+#: functions.php:1490
+msgid "ViraClub ID"
+msgstr "آی دی ویرا کلاب "
+
+#: functions.php:1562 functions.php:1569 searchform.php:3
+msgid "Search for:"
+msgstr "جستجو برای  : "
+
+#: functions.php:1563 functions.php:1570
+msgid "Search..."
+msgstr "جستجو..."
+
+#: functions.php:1602
+msgid " -- Only registered Users can Download the Catalog -- "
+msgstr "-- تنها کاربران عضو می توانند کاتالوگ را دانلود نمایند --"
+
+#: header.php:106 library/itstar.php:295
+msgid "The Main Menu"
+msgstr "فهرست اصلی"
+
+#: header.php:125
+msgid "Main Menu"
+msgstr "فهرست اصلی "
+
+#: library/best-articles.php:33 library/cmb-functions.php:430
+msgid "Best Articles"
+msgstr "بهترین مطالب"
+
+#: library/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:394
+#: library/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:395
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#: library/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: library/cmb-functions.php:113
+msgid "Video Features"
+msgstr "ویژگی های ویدئو"
+
+#: library/cmb-functions.php:120
+msgid "video url"
+msgstr "آدرس ویدئو"
+
+#: library/cmb-functions.php:121
+msgid "Video Link"
+msgstr "لینک ویدئو"
+
+#: library/cmb-functions.php:144
+msgid "Post Features"
+msgstr "ویژگی های نوشته"
+
+#: library/cmb-functions.php:151 library/cmb-functions.php:281
+msgid "Feature"
+msgstr "ویژه"
+
+#: library/cmb-functions.php:152
+msgid "is this post a feature one?"
+msgstr "آیا این پست یک پست ویژه است برای نمایش در پست های ویژه ؟"
+
+#: library/cmb-functions.php:158 library/cmb-functions.php:172
+#: library/cmb-functions.php:185 library/cmb-functions.php:288
+#: library/cmb-functions.php:306 library/cmb-functions.php:351
+#: library/cmb-functions.php:398 library/cmb-functions.php:437
+#: library/cmb-functions.php:450
+msgid "no"
+msgstr "خیر"
+
+#: library/cmb-functions.php:159 library/cmb-functions.php:171
+#: library/cmb-functions.php:184 library/cmb-functions.php:289
+#: library/cmb-functions.php:307 library/cmb-functions.php:352
+#: library/cmb-functions.php:399 library/cmb-functions.php:438
+#: library/cmb-functions.php:451
+msgid "Yes"
+msgstr "بله"
+
+#: library/cmb-functions.php:164
+msgid "Related Article"
+msgstr "مطالب مرتبط"
+
+#: library/cmb-functions.php:165
+msgid "is this post an Related Article?"
+msgstr "آیا این مطلب به عنوان مطلب مرتبط نمایش داده شود"
+
+#: library/cmb-functions.php:177
+msgid "Article"
+msgstr "مقاله"
+
+#: library/cmb-functions.php:178
+msgid "is this post an Article?"
+msgstr "آیا این پست یک مقاله محسوب می شود؟"
+
+#: library/cmb-functions.php:205
+msgid "slide Features"
+msgstr "ویژگی های اسلاید"
+
+#: library/cmb-functions.php:211
+msgid "Link"
+msgstr "لینک"
+
+#: library/cmb-functions.php:212
+msgid "Slide Link"
+msgstr "لینک اسلاید"
+
+#: library/cmb-functions.php:235
+msgid "item Features"
+msgstr "ویژگی های آیتم"
+
+#: library/cmb-functions.php:242 library/cmb-functions.php:243
+msgid "item priority"
+msgstr "اولیت آیتم"
+
+#: library/cmb-functions.php:249
+msgid "item url"
+msgstr "آدرس آیتم"
+
+#: library/cmb-functions.php:250
+msgid "item Link"
+msgstr "لینک آیتم (اختیاری)"
+
+#: library/cmb-functions.php:274
+msgid "Page Features"
+msgstr "ویژگی های صفحه"
+
+#: library/cmb-functions.php:282
+msgid "is this page a feature page?"
+msgstr "آیا این یک صفحه ویژه است ؟"
+
+#: library/cmb-functions.php:299
+msgid "Slider"
+msgstr "اسلایدر"
+
+#: library/cmb-functions.php:300
+msgid "Show slider?"
+msgstr "اسلایدر نمایش داده شود؟"
+
+#: library/cmb-functions.php:332
+msgid "Slider Category"
+msgstr "دسته بندی اسلایدها"
+
+#: library/cmb-functions.php:333
+msgid "Select Slider Category"
+msgstr "دسته بندی اسلایدها را انتخاب نمایید"
+
+#: library/cmb-functions.php:344
+msgid "Items"
+msgstr "آیتم ها"
+
+#: library/cmb-functions.php:345
+msgid "Show Items?"
+msgstr "آیتم های مربوط نمایش داده شود؟"
+
+#: library/cmb-functions.php:357 library/cmb-functions.php:358
+msgid "Items Title"
+msgstr "عنوان لیست آیتم ها"
+
+#: library/cmb-functions.php:381
+msgid "item Category"
+msgstr "دسته بندی آیتم ها"
+
+#: library/cmb-functions.php:382
+msgid "Select item Category"
+msgstr "دسته بندی آیتم ها را انتخاب نمایید"
+
+#: library/cmb-functions.php:391 library/related-articles.php:35
+msgid "Related Articles"
+msgstr "مطالب مرتبط"
+
+#: library/cmb-functions.php:392
+msgid "Show Related Articles?"
+msgstr "مطالب مرتبط نمایش داده شود؟"
+
+#: library/cmb-functions.php:420
+msgid "Article Category"
+msgstr "دسته بندی مطالب مرتبط"
+
+#: library/cmb-functions.php:421
+msgid "Select Article Category"
+msgstr "انتخاب دسته بندی مطالب مرتبط"
+
+#: library/cmb-functions.php:431
+msgid "Show Best Articles?"
+msgstr "آیا بهترین مطالب نمایش داده شود؟"
+
+#: library/cmb-functions.php:443 library/last-articles.php:33
+msgid "Last Articles"
+msgstr "آخرین مطالب"
+
+#: library/cmb-functions.php:444
+msgid "Show Last Articles?"
+msgstr "آیا آخرین مطالب نمایش داده شود؟"
+
+#: library/comment-form.php:8
+msgid ""
+"<span class=\"required\">Please fill the fields marked by <i class=\"icon-"
+"star\"></i></span>"
+msgstr "<span class=\"required\"> لطفا فیلد های ضروری را تکمیل نمایید </span>"
+
+#: library/comment-form.php:13
+msgid "Leave a Reply"
+msgstr "ارسال دیدگاه"
+
+#: library/comment-form.php:14
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "ارسال دیدگاه برای %s"
+
+#: library/comment-form.php:15
+msgid "Cancel Reply<i class=\"fa fa-remove\"></i>"
+msgstr "لغو دیدگاه"
+
+#: library/comment-form.php:16
+msgid "Post Comment"
+msgstr "ارسال دیدگاه"
+
+#: library/comment-form.php:18
+msgid "<i class=\"icon-doc-text\"></i> Comment"
+msgstr "دیدگاه"
+
+#: library/comment-form.php:19
+msgid "your message"
+msgstr "پیام شما"
+
+#: library/comment-form.php:24
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "برای ارسال دیدگاه باید <a href=\"%s\">وارد سایت شوید</a>"
+
+#: library/comment-form.php:30
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"شما به عنوان <a href=\"%1$s\">%2$s</a> وارد سایت شده اید . آیا می خواهید  <a "
+"href=\"%3$s\" title=\"Log out of this account\"> خارج شوید ؟</a>"
+
+#: library/comment-form.php:37
+msgid "Your email address will not be published."
+msgstr "آدرس ایمیل شما منتشر نخواهد شد"
+
+#: library/comment-form.php:42
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr "شما می توانید از این تگ های اچ تی ام ال استفاده نمایید : %s"
+
+#: library/comment-form.php:50
+msgid "<i class=\"fa fa-user\"></i> Name"
+msgstr "<i class=\"fa fa-user\"></i> نام "
+
+#: library/comment-form.php:50
+msgid "yourname"
+msgstr "نام شما"
+
+#: library/comment-form.php:56
+msgid "<i class=\"fa fa-envelope\"></i> Email"
+msgstr "<i class=\"fa fa-envelope\"></i> ایمیل "
+
+#: library/comment-form.php:56
+msgid "yourname@example.com"
+msgstr ""
+
+#: library/comment-form.php:63
+msgid "<i class=\"fa fa-link\"></i> Website"
+msgstr "<i class=\"fa fa-link\"></i> وب سایت "
+
+#: library/comment-form.php:64
+msgid "www.example.com"
+msgstr ""
+
+#: library/custom-post-type.php:31 library/custom-post-type.php:32
+msgid "video"
+msgstr "ویدئو"
+
+#: library/custom-post-type.php:33
+msgid "All videos"
+msgstr "همه ویدئوها"
+
+#: library/custom-post-type.php:34 library/custom-post-type.php:136
+#: library/custom-post-type.php:206
+msgid "Add New"
+msgstr "افزودن جدید"
+
+#: library/custom-post-type.php:35
+msgid "Add New videos"
+msgstr "افزودن ویدئو جدید"
+
+#: library/custom-post-type.php:36 library/custom-post-type.php:138
+#: library/custom-post-type.php:208
+msgid "Edit"
+msgstr "ویرایش"
+
+#: library/custom-post-type.php:37
+msgid "Edit video"
+msgstr "ویرایش ویدئو"
+
+#: library/custom-post-type.php:38
+msgid "New video"
+msgstr "ویدئو جدید"
+
+#: library/custom-post-type.php:39
+msgid "View video"
+msgstr "نمایش ویدئو"
+
+#: library/custom-post-type.php:40
+msgid "Search videos"
+msgstr "جستجوی ویدئوها"
+
+#: library/custom-post-type.php:41 library/custom-post-type.php:143
+#: library/custom-post-type.php:213
+msgid "Nothing found in the Database."
+msgstr "موردی در پایگاه داده یافت نشد"
+
+#: library/custom-post-type.php:42 library/custom-post-type.php:144
+#: library/custom-post-type.php:214
+msgid "Nothing found in Trash"
+msgstr "موردی در زباله دان یافت نشد"
+
+#: library/custom-post-type.php:45
+msgid "This is a video"
+msgstr "آیا این یک ویدئو است"
+
+#: library/custom-post-type.php:71
+msgid "video Categories"
+msgstr "دسته بندی های ویدئو"
+
+#: library/custom-post-type.php:72
+msgid "video Category"
+msgstr "دسته بندی ویدئو"
+
+#: library/custom-post-type.php:73
+msgid "Search video Categories"
+msgstr "جستجوی دسته بندی ویدئو"
+
+#: library/custom-post-type.php:74
+msgid "All video Categories"
+msgstr "همه دسته بندی های ویدئو"
+
+#: library/custom-post-type.php:75
+msgid "Parent video Category"
+msgstr "دسته بندی مادر ویدئو"
+
+#: library/custom-post-type.php:76
+msgid "Parent video Category:"
+msgstr "دسته بندی مادر ویدئو"
+
+#: library/custom-post-type.php:77
+msgid "Edit video Category"
+msgstr "ویرایش دسته بندی ویدئو"
+
+#: library/custom-post-type.php:78
+msgid "Update video Category"
+msgstr "بروز رسانی دسته بندی ویدئو"
+
+#: library/custom-post-type.php:79
+msgid "Add New video Category"
+msgstr "افزودن دسته بندی جدید ویدئو"
+
+#: library/custom-post-type.php:80
+msgid "New video Category Name"
+msgstr "نام دسته بندی جدید ویدئو"
+
+#: library/custom-post-type.php:96
+msgid "video Tags"
+msgstr "برچسب های  ویدئو"
+
+#: library/custom-post-type.php:97
+msgid "video Tag"
+msgstr "برچسب ویدئو"
+
+#: library/custom-post-type.php:98
+msgid "Search video Tags"
+msgstr "جستجوی برچسب های ویدئو"
+
+#: library/custom-post-type.php:99
+msgid "All video Tags"
+msgstr "همه برچسب های ویدئو"
+
+#: library/custom-post-type.php:100
+msgid "Parent video Tag"
+msgstr "برچسب ویدئو مادر"
+
+#: library/custom-post-type.php:101
+msgid "Parent video Tag:"
+msgstr "برچسب ویدئو مادر"
+
+#: library/custom-post-type.php:102
+msgid "Edit video Tag"
+msgstr "ویرایش برچسب ویدئو"
+
+#: library/custom-post-type.php:103
+msgid "Update video Tag"
+msgstr "بروز رسانی برچسب ویدئو"
+
+#: library/custom-post-type.php:104
+msgid "Add New video Tag"
+msgstr "افزودن برچسب ویدئو"
+
+#: library/custom-post-type.php:105
+msgid "New video Tag Name"
+msgstr "نام برچسب ویدئو جدید"
+
+#: library/custom-post-type.php:133 library/custom-post-type.php:134
+msgid "slide"
+msgstr "اسلاید"
+
+#: library/custom-post-type.php:135
+msgid "All slides"
+msgstr "همه اسلایدها"
+
+#: library/custom-post-type.php:137
+msgid "Add New slides"
+msgstr "افزودن اسلاید جدید"
+
+#: library/custom-post-type.php:139
+msgid "Edit slide"
+msgstr "ویرایش اسلاید"
+
+#: library/custom-post-type.php:140
+msgid "New slide"
+msgstr "اسلاید جدید"
+
+#: library/custom-post-type.php:141
+msgid "View slide"
+msgstr "ویرایش اسلاید"
+
+#: library/custom-post-type.php:142
+msgid "Search slides"
+msgstr "جیستجوی اسلایدها"
+
+#: library/custom-post-type.php:147
+msgid "This is a slide"
+msgstr "این یک اسلاید است"
+
+#: library/custom-post-type.php:179
+msgid "slide Categories"
+msgstr "دسته بندی های اسلاید"
+
+#: library/custom-post-type.php:180
+msgid "slide slide"
+msgstr "دسته بندی اسلاید"
+
+#: library/custom-post-type.php:181
+msgid "Search slide Categories"
+msgstr "جستجوی دسته بندی های اسلاید"
+
+#: library/custom-post-type.php:182
+msgid "All slide Categories"
+msgstr "همه دسته بندی های اسلاید"
+
+#: library/custom-post-type.php:183
+msgid "Parent slide Category"
+msgstr "دسته بندی اسلاید مادر"
+
+#: library/custom-post-type.php:184
+msgid "Parent slide Category:"
+msgstr "دسته بندی اسلاید مادر"
+
+#: library/custom-post-type.php:185
+msgid "Edit slide Category"
+msgstr "ویرایش دسته بندی اسلاید"
+
+#: library/custom-post-type.php:186
+msgid "Update slide Category"
+msgstr "بروز رسانی دسته بندی اسلاید"
+
+#: library/custom-post-type.php:187
+msgid "Add New slide Category"
+msgstr "نام دسته بندی اسلاید جدید"
+
+#: library/custom-post-type.php:188
+msgid "New slide Category Name"
+msgstr "نام دسته بندی اسلاید جدید"
+
+#: library/custom-post-type.php:203 library/custom-post-type.php:204
+msgid "item"
+msgstr "آیتم"
+
+#: library/custom-post-type.php:205
+msgid "All items"
+msgstr "همه آیتم ها"
+
+#: library/custom-post-type.php:207
+msgid "Add New items"
+msgstr "افزودن آیتم جدید"
+
+#: library/custom-post-type.php:209
+msgid "Edit item"
+msgstr "ویرایش آیتم"
+
+#: library/custom-post-type.php:210
+msgid "New item"
+msgstr "آیتم جدید"
+
+#: library/custom-post-type.php:211
+msgid "View item"
+msgstr "ویرایش آیتم"
+
+#: library/custom-post-type.php:212
+msgid "Search items"
+msgstr "جستجوی آیتم ها"
+
+#: library/custom-post-type.php:217
+msgid "This is a item"
+msgstr "این یک آیتم است"
+
+#: library/custom-post-type.php:248
+msgid "item Categories"
+msgstr "دسته بندی های آیتم"
+
+#: library/custom-post-type.php:249
+msgid "item item"
+msgstr "دسته بندی آیتم"
+
+#: library/custom-post-type.php:250
+msgid "Search item Categories"
+msgstr "جستجوی دسته بندی های آیتم"
+
+#: library/custom-post-type.php:251
+msgid "All item Categories"
+msgstr "همه دسته بندی های آیتم"
+
+#: library/custom-post-type.php:252
+msgid "Parent item Category"
+msgstr "دسته بندی آیتم مادر"
+
+#: library/custom-post-type.php:253
+msgid "Parent item Category:"
+msgstr "دسته بندی آیتم مادر"
+
+#: library/custom-post-type.php:254
+msgid "Edit item Category"
+msgstr "ویراش دسته بندی آیتم"
+
+#: library/custom-post-type.php:255
+msgid "Update item Category"
+msgstr "بروز رسانی دسته بندی آیتم"
+
+#: library/custom-post-type.php:256
+msgid "Add New item Category"
+msgstr "نام دسته بندی آیتم جدید"
+
+#: library/custom-post-type.php:257
+msgid "New item Category Name"
+msgstr "نام دسته بندی آیتم"
+
+#: library/featured-page.php:28
+msgid "Our Services"
+msgstr "خدمات ما"
+
+#: library/items-block.php:75
+msgid "more items"
+msgstr "موارد بیشتر"
+
+#: library/itstar.php:87
+#, php-format
+msgid "Page %s"
+msgstr "صفحه %s"
+
+#: library/itstar.php:296
+msgid "Responsive Menu"
+msgstr "فهرست موبایل"
+
+#: library/itstar.php:329
+msgid "No Related Posts Yet!"
+msgstr "هنوز مطلب مشابه ای منتشر نشده است !"
+
+#: library/itstar.php:374
+msgid "Read "
+msgstr "ادامه "
+
+#: library/itstar.php:374
+msgid "Read more &raquo;"
+msgstr "ادامه &raquo;"
+
+#: library/kirki_options.php:11
+msgid "Theme Option"
+msgstr "تنظیمات پوسته "
+
+#: library/kirki_options.php:20
+msgid "Side Widget Header Color"
+msgstr "رنگ عنوان ابزاک های ستون کناری "
+
+#: library/kirki_options.php:29
+msgid "Background Color"
+msgstr "رنگ پس زمینه سایت"
+
+#: library/kirki_options.php:39
+msgid "Site Logo"
+msgstr "لوگوی سایت"
+
+#: library/kirki_options.php:49
+msgid "Site Menu Logo"
+msgstr "لوگوی سایت در منوی موبایل"
+
+#: library/related-articles.php:65
+msgid "more articles"
+msgstr "مطالب بیشتر"
+
+#: searchform.php:6
+msgid "Search"
+msgstr "جستجو "
+
+#~ msgid "Top Arous"
+#~ msgstr "تاپ عروس"
+
+#~ msgid "Follow US "
+#~ msgstr "ما را دنبال کنید !"
+
+#~ msgid "Sana © 2016. All rights reserved."
+#~ msgstr "سنا چوب © 2016 . تمامی حقوق محفوظ می باشد."
+
+#~ msgid "Designed "
+#~ msgstr "طراحی سایت "
+
+#~ msgid "By Farakaranet "
+#~ msgstr "توسط فراکارانت"
+
+#~ msgid "Slider Size"
+#~ msgstr "سایت اسلایدشو"
+
+#~ msgid "Slider Thumb"
+#~ msgstr "تصویر بند انگشتی اسلایدشو"
+
+#~ msgid "Footer Second"
+#~ msgstr "پانوشت بخش دوم"
+
+#~ msgid "The second footer widget area"
+#~ msgstr "دومین بخش ابزارک های پانوشت"
+
+#~ msgid "Last Products Widget"
+#~ msgstr "ابزارک آخرین محصولات"
+
+#~ msgid "Last Products"
+#~ msgstr "آخرین محصولات"
+
+#~ msgid "product Numbers :"
+#~ msgstr "تعداد محصول : "
+
+#~ msgid "Product Category :"
+#~ msgstr "دسته بندی محصولات : "
+
+#~ msgid "Last Projects Widget"
+#~ msgstr "ابزارک آخرین پروژه ها"
+
+#~ msgid "Display Last Projects"
+#~ msgstr "نمایش آخرین پروژه ها"
+
+#~ msgid "Last Projects"
+#~ msgstr "آخرین پروژه ها"
+
+#~ msgid "Project Numbers :"
+#~ msgstr "تعداد پروژه : "
+
+#~ msgid "Project Category :"
+#~ msgstr "دسته بندی پروژه : "
+
+#~ msgid "Contact Informaion Widget"
+#~ msgstr "ابزارک اطلاعات تماس"
+
+#~ msgid "Display Contact Information"
+#~ msgstr "نمایش اطلاعات تماس "
+
+#~ msgid "Address : "
+#~ msgstr "آدرس : "
+
+#~ msgid "Phone : "
+#~ msgstr "تلفن : "
+
+#~ msgid "Fax : "
+#~ msgstr "فکس : "
+
+#~ msgid "Email : "
+#~ msgstr "ایمیل : "
+
+#~ msgid "Address :"
+#~ msgstr "آدرس :"
+
+#~ msgid "Phone Number :"
+#~ msgstr "شماره تلفن : "
+
+#~ msgid "Fax Number :"
+#~ msgstr "شماره فکس : "
+
+#~ msgid "Email Address :"
+#~ msgstr "آدرس ایمیل : "
+
+#~ msgid "Social Networks Widget"
+#~ msgstr "ابزارک لینک های اجتماعی "
+
+#~ msgid "Social Networks and Important links"
+#~ msgstr "نمایش لینک های اجتماعی "
+
+#~ msgid "Download Cataloge"
+#~ msgstr "دانلود کاتالوگ"
+
+#~ msgid "Send Email"
+#~ msgstr "ارسال ایمیل "
+
+#~ msgid "Login"
+#~ msgstr "ورود "
+
+#~ msgid "Social Links"
+#~ msgstr "لینک های اجتماعی "
+
+#~ msgid "Google Plus Url :"
+#~ msgstr "لینک گوگل پلاس"
+
+#~ msgid "Facebook Url :"
+#~ msgstr "لینک فیسبوک"
+
+#~ msgid "Linkedin Url :"
+#~ msgstr "لینک لینکداین"
+
+#~ msgid "Instagram Url :"
+#~ msgstr "لینک اینستاگرام"
+
+#~ msgid "Catalog Download url :"
+#~ msgstr "لینک دانلود کاتالوگ"
+
+#~ msgid "Send Email Url :"
+#~ msgstr "لینک ارسال ایمیل "
+
+#~ msgid "Login Url :"
+#~ msgstr "لینک ورود به سایت"
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "جستجو برای : %s"
+
+#~ msgid "Product Features"
+#~ msgstr "ویژگی های محصولات "
+
+#~ msgid "Add Product features"
+#~ msgstr "افزودن ویژگی جدید"
+
+#~ msgid "feature {#}"
+#~ msgstr "ویژگی {#}"
+
+#~ msgid "Add Another feature"
+#~ msgstr "افزودن ویژگی جدید"
+
+#~ msgid "Remove feature"
+#~ msgstr "حذف ویژگی "
+
+#~ msgid "Feature Name"
+#~ msgstr "نام ویژگی"
+
+#~ msgid "write the feature name "
+#~ msgstr "نگارش نام ویژگی"
+
+#~ msgid "Feature Description "
+#~ msgstr "توضیحات ویژگی"
+
+#~ msgid "write the feature Description if needed"
+#~ msgstr "نام وِیژگی را در صورت نیاز یادداشت نمایید"
+
+#~ msgid "Images"
+#~ msgstr "تصویر"
+
+#~ msgid "Upload or add multiple images/attachments."
+#~ msgstr "بارگذاری یا افزودن تصویر "
+
+#~ msgid "Project Date"
+#~ msgstr "تاریخ پروژه"
+
+#~ msgid "Date"
+#~ msgstr "تاریخ "
+
+#~ msgid "Enter Project Date"
+#~ msgstr "تاریخ پروژه را وارد نایید"
+
+#~ msgid "Project Features"
+#~ msgstr "ویژگی پروژه"
+
+#~ msgid "Add Project features"
+#~ msgstr "ویژگی پروژه را وارد نمایید"
+
+#~ msgid "Feature Value"
+#~ msgstr "ارزش ویژگی "
+
+#~ msgid "write the feature Value "
+#~ msgstr "ارزش ویژگی را وارد نمایید "
+
+#~ msgid "Project Images"
+#~ msgstr "تصویر پروژه"
+
+#~ msgid "Page Banner"
+#~ msgstr "بنر صفحه"
+
+#~ msgid "Banner"
+#~ msgstr "بنر"
+
+#~ msgid "Choose Banner Mod, SlideShow , Image Banner or Nothing"
+#~ msgstr "یک نوع بنر برای صفحه انتخاب نمایید"
+
+#~ msgid "Image"
+#~ msgstr "تصویر"
+
+#~ msgid "Map"
+#~ msgstr "نقشه"
+
+#~ msgid "Slider Shortcode"
+#~ msgstr "کد کوتاه اسلایدشو"
+
+#~ msgid "write this page Revolotion Slider shortcode with alis name here"
+#~ msgstr "کد کوتاه اسلایدشو را وارد نمایید"
+
+#~ msgid "Banner Image"
+#~ msgstr "تصویر "
+
+#~ msgid "Upload an image to show as the banner"
+#~ msgstr "یک تصویر را بارگذاری نمایید"
+
+#~ msgid "Google Map"
+#~ msgstr "نقشه گوگل"
+
+#~ msgid "Enter Google Map embed code"
+#~ msgstr "کد جایگذاری نقشه گوگل را وارد نمایید"
+
+#~ msgid "First Page links"
+#~ msgstr "لینک های صفحه اصلی"
+
+#~ msgid "Contact Us"
+#~ msgstr "تماس با ما"
+
+#~ msgid "Contact Us Link"
+#~ msgstr "لینک تماس با ما"
+
+#~ msgid "Products"
+#~ msgstr "محصولات"
+
+#~ msgid "Products Link"
+#~ msgstr "لینک محصولات"
+
+#~ msgid "Cataloges"
+#~ msgstr "کاتالوگ ها"
+
+#~ msgid "Cataloges Link"
+#~ msgstr "لینک کاتالوگ ها"
+
+#~ msgid "About 3mm"
+#~ msgstr "درباره 3میل"
+
+#~ msgid "About 3mm Link"
+#~ msgstr "لینک دباره 3 میل"
+
+#~ msgid "Feature Page"
+#~ msgstr "صفحات ویژه"
+
+#~ msgid "is this page a feature one?"
+#~ msgstr "آیا این صفحه ویژه است (برای نمایش بلوک های صفحه اصلی) ؟"
+
+#~ msgid "Page Excerpt"
+#~ msgstr "خلاصه صفحه برای نمایش در بلوک های ویژه صفحه اصلی"
+
+#~ msgid "Product"
+#~ msgstr "محصول"
+
+#~ msgid "All Products"
+#~ msgstr "همه محصولات"
+
+#~ msgid "Add New Products"
+#~ msgstr "افزودن محصول جدید"
+
+#~ msgid "Edit Product"
+#~ msgstr "ویرایش محصول"
+
+#~ msgid "New Product"
+#~ msgstr "محصول جدید"
+
+#~ msgid "View Product"
+#~ msgstr "نمایش محصول"
+
+#~ msgid "Search Products"
+#~ msgstr "جستجوی محصولات"
+
+#~ msgid "This is a Product"
+#~ msgstr "این یک محصول است "
+
+#~ msgid "New user registration in %s:"
+#~ msgstr "کاربر جدید در %s عضو گردید : "
+
+#~ msgid "Username: %s"
+#~ msgstr "نام کاربری : %s"
+
+#~ msgid "E-mail: %s"
+#~ msgstr "ایمیل : %s"
+
+#~ msgid "Vira Club ID : V%s"
+#~ msgstr "آی دی ویرا کلاب : %s"
+
+#~ msgid "New User Registration"
+#~ msgstr "عضویت کاربر جدید"
+
+#~ msgid "Your Information : "
+#~ msgstr "اطلاعات شما : "
+
+#~ msgid "Password: %s"
+#~ msgstr "کلمه عبور : %s"
+
+#~ msgid "Welcome to Vira"
+#~ msgstr "به ویرا خوش آمدید "
+
+#~ msgid "Tags :"
+#~ msgstr "برچسب ها : "
+
+#~ msgid "related sites"
+#~ msgstr "سایت های مرتبط "
+
+#~ msgid "Date "
+#~ msgstr "تاریخ "
+
+#~ msgid "Support"
+#~ msgstr "خدمات پس از فروش"
+
+#~ msgid "Support Link"
+#~ msgstr "لینک خدمات پس از فروش"
+
+#~ msgid "Agencies"
+#~ msgstr "نمایندگی ها"
+
+#~ msgid "Agencies Link"
+#~ msgstr "لینک نمایندگی ها"
+
+#~ msgid "Photo Gallery"
+#~ msgstr "گالری تصاویر"
+
+#~ msgid "Photo Gallery Link"
+#~ msgstr "لینک گالری تصاویر"
+
+#~ msgid "News"
+#~ msgstr "اخبار و مقالات"
+
+#~ msgid "News Link"
+#~ msgstr "لینک اخبار و مقالات"
+
+#~ msgid "Services & Articles"
+#~ msgstr "اخبار و مقالات"
+
+#~ msgid "After Sales Services"
+#~ msgstr "خدمات پس از فروش"
+
+#~ msgid "the customer is always right"
+#~ msgstr "همیشه حق با مشتری است "
+
+#~ msgid "Sana © 2015. All rights reserved."
+#~ msgstr "سنا چوب  © 2016"
