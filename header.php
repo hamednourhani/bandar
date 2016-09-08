@@ -58,7 +58,39 @@
 	<!-- ********************************************************************* -->
 
 		<header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-			
+			<div class="top-bar">
+				<section class="layout">
+
+					<?php do_action('icl_language_selector'); ?>
+
+					<div class="header-follow-links">
+
+						<ul>
+
+							<li>
+								<a href="#">
+									<img class="follow-telegram" src="<?php echo get_template_directory_uri();?>/images/icons/telegram.png"/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="follow-aparat" src="<?php echo get_template_directory_uri();?>/images/icons/aparat-white.png"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
 			<div class="hero">
 
 
