@@ -1,0 +1,37 @@
+.site-content{
+  background-color: $grey1;
+ .primary{
+   @include span-columns(12,12);
+   @include at-breakpoint($medium){
+     @include span-columns(8,12);
+   }
+ }
+  .secondray{
+    @include span-columns(12,12);
+    @include at-breakpoint($medium){
+      @include span-columns(4 omega,12);
+    }
+  }
+  &.without-sidebar{
+    .primary{
+      @include span-columns(12,12);
+      @include at-breakpoint($medium){
+        @include span-columns(12,12);
+      }
+    }
+    .secondray{
+      display : none;
+    }
+  }
+  &.full-width{
+    .primary{
+      @include span-columns(12,12);
+      @include at-breakpoint($medium){
+        @include span-columns(12,12);
+      }
+    }
+    .secondray{
+      display : none;
+    }
+  }
+}

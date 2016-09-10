@@ -94,3 +94,80 @@ function itstar_before_row_if_2( $field_args, $field ) {
 		echo '<p>Testing <b>"before_row"</b> parameter (<b>NOT</b> on $post_id 2)</p>';
 	}
 }
+
+/******************************************************************/
+/*--------------------Page Banner -------------------------------*/
+/******************************************************************/
+
+add_action('cmb2_init','itstar_register_page_banner_metabox');
+// add_action('cmb2_init','itstar_register_tour_information_metabox');
+function itstar_register_page_banner_metabox() {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_itstar_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $cmb_demo = new_cmb2_box( array(
+        'id'            => $prefix . 'page_banner',
+        'title'         => __( 'Page Banner', 'itstar' ),
+        'object_types'  => array( 'post','page','product'), // Post type
+        // 'show_on_cb' => 'itstar_show_if_front_page', // function should return a bool value
+        // 'context'    => 'normal',
+        // 'priority'   => 'high',
+        // 'show_names' => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+
+    $cmb_demo->add_field( array(
+        'name'       => __( 'Banner', 'itstar' ),
+        'desc'       => __( 'Choose Banner Mod, SlideShow , Image Banner or Nothing', 'itstar' ),
+        'id'         => $prefix . 'banner_mod',
+        'type'       => 'radio_inline',
+        'show_option_none' => true,
+        'options'          => array(
+            'slider' => __( 'Slider', 'itstar' ),
+            'image' => __( 'Image', 'itstar' ),
+            'map' => __( 'Map', 'gsalborz' ),
+
+        ),
+
+        //'show_on_cb' => 'itstar_hide_if_no_cats', // function should return a bool value
+        // 'sanitization_cb' => 'my_custom_sanitization', // custom sanitization callback parameter
+        // 'escape_cb'       => 'my_custom_escaping',  // custom escaping callback parameter
+        // 'on_front'        => false, // Optionally designate a field to wp-admin only
+        // 'repeatable'      => true,
+    ) );
+
+
+    $cmb_demo->add_field( array(
+        'name'       => __( 'Slider Shortcode', 'itstar' ),
+        'desc'       => __( 'write this page Revolotion Slider shortcode with alis name here', 'itstar' ),
+        'id'         => $prefix . 'slider_shortcode',
+        'type'       => 'text',
+
+    ) );
+
+    $cmb_demo->add_field( array(
+        'name'       => __( 'Banner Image', 'itstar' ),
+        'desc'       => __( 'Upload an image to show as the banner', 'itstar' ),
+        'id'         => $prefix . 'image',
+        'type'       => 'file',
+
+    ) );
+
+    $cmb_demo->add_field( array(
+        'name'       => __( 'Google Map', 'itstar' ),
+        'desc'       => __( 'Enter Google Map embed code', 'gsalborz' ),
+        'id'         => $prefix . 'map',
+        'type'       => 'textarea_code',
+
+    ) );
+
+
+
+}

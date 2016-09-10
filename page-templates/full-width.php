@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-    <main class="site-main full-weight">
+    <main class="site-main full-width">
         <?php if(have_posts()){ ?>
             <?php while(have_posts()) { the_post(); ?>
 

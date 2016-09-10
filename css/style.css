@@ -690,7 +690,7 @@ p {
 /*------ colors -----------*/
 /*----------------transition-shadow----------------------*/
 /* line 99, sass/base/_variables.scss */
-.def-transition, .bottom-tooltip, .hero .menu-search-area form.searchform input#s, .hero a.menu-toggler, .hero a.menu-toggler i:before, nav.main-menu ul.main-nav a, nav.main-menu ul.main-nav ul.sub-menu, nav.main-menu div.responsive-menu, .top-bar ul li a, input[type=submit], button, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid:after, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid h3 {
+.def-transition, .bottom-tooltip, .top-bar ul li a, .hero .menu-search-area form.searchform input#s, .hero a.menu-toggler, .hero a.menu-toggler i:before, nav.main-menu ul.main-nav a, nav.main-menu ul.main-nav ul.sub-menu, nav.main-menu div.responsive-menu, input[type=submit], button, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid:after, .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid h3 {
   -moz-transition: all 0.4s ease-in-out 0s;
   -o-transition: all 0.4s ease-in-out 0s;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1253,6 +1253,36 @@ img.wp-smiley,
   left: auto;
   right: 0; }
 
+/* line 1, sass/layout/_top.scss */
+.top-bar {
+  max-height: 50px;
+  background-color: #16242E;
+  color: #FFFFFF; }
+  /* line 5, sass/layout/_top.scss */
+  .top-bar ul {
+    padding: 0px;
+    margin: 0px; }
+    /* line 8, sass/layout/_top.scss */
+    .top-bar ul li {
+      display: inline-block; }
+      /* line 10, sass/layout/_top.scss */
+      .top-bar ul li a {
+        display: block;
+        height: 100%;
+        padding: 5px;
+        background-color: transparent; }
+        /* line 16, sass/layout/_top.scss */
+        .top-bar ul li a:hover {
+          background-color: #69CD72; }
+        /* line 19, sass/layout/_top.scss */
+        .top-bar ul li a img {
+          max-width: 20px;
+          max-height: 20px; }
+        /* line 24, sass/layout/_top.scss */
+        .top-bar ul li a i:before {
+          color: #F2F2F2;
+          padding: 0px 5px; }
+
 /* line 1, sass/layout/_header.scss */
 .hero {
   overflow: hidden;
@@ -1506,7 +1536,7 @@ nav.main-menu {
     right: 100%;
     width: 240px;
     max-width: 100%;
-    background-color: #58585d;
+    background-color: #16242E;
     color: #FFFFFF;
     z-index: 999;
     display: block; }
@@ -1515,7 +1545,7 @@ nav.main-menu {
       color: #FFFFFF; }
       /* line 279, sass/layout/_header.scss */
       nav.main-menu div.responsive-menu a:hover {
-        color: #fb2125; }
+        color: #69CD72; }
     @media (min-width: 45em) {
       /* line 266, sass/layout/_header.scss */
       nav.main-menu div.responsive-menu {
@@ -1559,35 +1589,67 @@ nav.main-menu {
           margin-left: 30px;
           padding: 0px; }
 
-/* line 1, sass/layout/_top.scss */
-.top-bar {
-  max-height: 50px;
-  background-color: #16242E;
-  color: #FFFFFF; }
-  /* line 5, sass/layout/_top.scss */
-  .top-bar ul {
-    padding: 0px;
-    margin: 0px; }
-    /* line 8, sass/layout/_top.scss */
-    .top-bar ul li {
-      display: inline-block; }
-      /* line 10, sass/layout/_top.scss */
-      .top-bar ul li a {
-        display: block;
-        height: 100%;
-        padding: 5px;
-        background-color: transparent; }
-        /* line 16, sass/layout/_top.scss */
-        .top-bar ul li a:hover {
-          background-color: #69CD72; }
-        /* line 19, sass/layout/_top.scss */
-        .top-bar ul li a img {
-          max-width: 20px;
-          max-height: 20px; }
-        /* line 24, sass/layout/_top.scss */
-        .top-bar ul li a i:before {
-          color: #F2F2F2;
-          padding: 0px 5px; }
+/* line 1, sass/layout/_banner.scss */
+.banner-wrapper {
+  margin-top: -23px; }
+
+/* line 1, sass/layout/_main.scss */
+.site-content {
+  background-color: #F2F2F2; }
+  /* line 3, sass/layout/_main.scss */
+  .site-content .primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.53846%;
+    display: inline; }
+    @media (min-width: 45em) {
+      /* line 3, sass/layout/_main.scss */
+      .site-content .primary {
+        width: 66.15385%;
+        float: left;
+        margin-right: 1.53846%; } }
+  /* line 9, sass/layout/_main.scss */
+  .site-content .secondray {
+    width: 100%;
+    float: left;
+    margin-right: 1.53846%;
+    display: inline; }
+    @media (min-width: 45em) {
+      /* line 9, sass/layout/_main.scss */
+      .site-content .secondray {
+        width: 32.30769%;
+        float: right;
+        margin-right: 0; } }
+  /* line 16, sass/layout/_main.scss */
+  .site-content.without-sidebar .primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.53846%;
+    display: inline; }
+    @media (min-width: 45em) {
+      /* line 16, sass/layout/_main.scss */
+      .site-content.without-sidebar .primary {
+        width: 100%;
+        float: left;
+        margin-right: 1.53846%; } }
+  /* line 22, sass/layout/_main.scss */
+  .site-content.without-sidebar .secondray {
+    display: none; }
+  /* line 27, sass/layout/_main.scss */
+  .site-content.full-width .primary {
+    width: 100%;
+    float: left;
+    margin-right: 1.53846%;
+    display: inline; }
+    @media (min-width: 45em) {
+      /* line 27, sass/layout/_main.scss */
+      .site-content.full-width .primary {
+        width: 100%;
+        float: left;
+        margin-right: 1.53846%; } }
+  /* line 33, sass/layout/_main.scss */
+  .site-content.full-width .secondray {
+    display: none; }
 
 /* button style */
 /* line 2, sass/modules/_btn.scss */

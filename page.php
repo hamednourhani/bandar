@@ -1,29 +1,14 @@
 <?php
-
-
-
 get_header();
-
 ?>
-
-
 	<main class="site-main">
-
-
-
 		<div class="site-content">
+			<div class="banner-wrapper">
+				<?php get_template_part('library/banner','maker');?>
+			</div>
 			<section class="layout">
 
-				<?php get_sidebar("top"); ?>
-
 				<div class="primary">
-
-					<?php get_template_part('library/slider','area'); ?>
-					<?php get_template_part('library/items','block'); ?>
-					<?php get_template_part('library/related', 'articles'); ?>
-					
-
-
 					<?php
 					if(have_posts()){ ?>
 						<div class="page-content-desc">
@@ -37,13 +22,6 @@ get_header();
 							?>
 						</div>
 					<?php  }  ?>
-
-
-
-					<?php get_template_part("library/best", "articles"); ?>
-					<?php get_template_part("library/last","articles");?>
-
-
 				</div><!-- primary -->
 
 				<div class="secondary">
@@ -52,8 +30,5 @@ get_header();
 
 			</section>
 		</div>
-
-
 	</main>
-
 <?php get_footer(); ?>

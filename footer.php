@@ -8,7 +8,7 @@
 
 			<footer class="site-footer">
 				<section class="layout">
-					<span class="site-credit"><?php echo __( "TopArous © 2016. All rights reserved.","itstar"); ?></span>
+					<span class="site-credit"><?php echo __( "Bandar Cooling Industry © 2016. All rights reserved.","itstar"); ?></span>
 
 				</section>
 			</footer> <!-- footer -->

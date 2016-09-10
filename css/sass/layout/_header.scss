@@ -271,13 +271,13 @@ nav.main-menu {
     right: 100%;
     width: 240px;
     max-width: 100%;
-    background-color: lighten($grey4, 15%);
+    background-color: $navy;
     color: $white;
     z-index: 999;
     a {
       color: $white;
       &:hover {
-        color: $red;
+        color: $green;
       }
     }
 
