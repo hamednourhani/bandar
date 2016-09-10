@@ -13,7 +13,7 @@ get_header();
                     <div class="banner-wrapper">
                         <?php get_template_part('library/banner','maker');?>
                     </div>
-
+                    <?php get_template_part('library/last','products');?>
                     <section class="layout">
 
                         <div class="primary">

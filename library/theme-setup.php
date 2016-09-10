@@ -75,6 +75,7 @@ add_action( 'after_setup_theme', 'itstar_ahoy' );
 // Thumbnail sizes
 add_image_size( 'slider', 960, 500, array( 'center', 'center' ) );
 add_image_size( 'post-thumb', 150, 150, array( 'center', 'center' ) );
+add_image_size( 'product-thumb', 300, 180, array( 'center', 'center' ) );
 add_image_size( 'post-banner', 960, 300, array( 'center', 'center' ) );
 
 
@@ -84,6 +85,7 @@ function itstar_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'slider' => __('960px by 500px'),
         'post-thumb' => __('150px by 150px'),
+        'product-thumb' => __('300px by 180px'),
         'post-banner' => __('960px by 300px'),
 
 

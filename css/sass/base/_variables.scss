@@ -135,7 +135,7 @@ $glassyWhite : rgba(255, 255, 255, 0.85);
 .white-box{
 	background-color: $white;
 	border-bottom : 3px solid darken($grey2,10%);
-	@include border-radius(4px);
+	@include border-radius(2px);
 	@include box-shadow(0px 0px 7px $grey3);
 	padding : 10px;
 	overflow: hidden;
