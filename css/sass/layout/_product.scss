@@ -1,11 +1,11 @@
 .items-block{
-  margin-top : 20px;
+  @extend .def-section;
   .items-list{
     a.item-unit{
       @extend .white-box;
       padding : 0px;
 
-      display : block;
+      display : block; 
       margin-bottom : 15px;
       @include span-columns(12,12);
       @include at-breakpoint($xmedium $medium){

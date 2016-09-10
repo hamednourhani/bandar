@@ -144,6 +144,15 @@ $glassyWhite : rgba(255, 255, 255, 0.85);
 }
 
 
+//---------------------section--------------------
+.def-section{
+	margin-top : 40px;
+}
+.section-title{
+	h1,h2,h3,h4 {
+
+	}
+}
 //---------------------tooltip--------------------
 .bottom-tooltip {
 	@extend .def-box-shadow;

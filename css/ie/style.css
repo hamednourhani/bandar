@@ -784,6 +784,10 @@ p {
   position: relative; }
 
 /* line 148, ../sass/base/_variables.scss */
+.def-section, .items-block {
+  margin-top: 40px; }
+
+/* line 157, ../sass/base/_variables.scss */
 .bottom-tooltip {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -804,7 +808,7 @@ p {
   pointer-events: none;
   top: 70px;
   filter: alpha(opacity=0); }
-  /* line 168, ../sass/base/_variables.scss */
+  /* line 177, ../sass/base/_variables.scss */
   .bottom-tooltip:before, .bottom-tooltip:after {
     content: '';
     position: absolute;
@@ -816,7 +820,7 @@ p {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #000000; }
-  /* line 180, ../sass/base/_variables.scss */
+  /* line 189, ../sass/base/_variables.scss */
   .bottom-tooltip:after {
     top: -14px;
     margin-left: -10px;
@@ -1644,67 +1648,64 @@ nav.main-menu {
   .site-content.full-width .secondray {
     display: none; }
 
-/* line 1, ../sass/layout/_product.scss */
-.items-block {
-  margin-top: 20px; }
+/* line 4, ../sass/layout/_product.scss */
+.items-block .items-list a.item-unit {
+  padding: 0px;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+  margin-right: 1.53846%;
+  display: inline; }
   /* line 4, ../sass/layout/_product.scss */
   .items-block .items-list a.item-unit {
-    padding: 0px;
-    display: block;
-    margin-bottom: 15px;
-    width: 100%;
-    float: left;
-    margin-right: 1.53846%;
-    display: inline; }
-    /* line 4, ../sass/layout/_product.scss */
-    .items-block .items-list a.item-unit {
   width: 32.30769%;
   float: left;
   margin-right: 1.53846%; }
-    /* line 19, ../sass/layout/_product.scss */
-    .items-block .items-list a.item-unit:nth-of-type(3n) {
+  /* line 19, ../sass/layout/_product.scss */
+  .items-block .items-list a.item-unit:nth-of-type(3n) {
   float: right;
   margin-right: 0; }
-    /* line 23, ../sass/layout/_product.scss */
-    .items-block .items-list a.item-unit .item-thumb {
-      text-align: center; }
-      /* line 25, ../sass/layout/_product.scss */
-      .items-block .items-list a.item-unit .item-thumb img {
-        margin-bottom: -8px; }
-    /* line 29, ../sass/layout/_product.scss */
-    .items-block .items-list a.item-unit .item-detail {
-      border-top: 3px solid #8bc4ea;
-      position: relative; }
-      /* line 32, ../sass/layout/_product.scss */
-      .items-block .items-list a.item-unit .item-detail:after {
-        content: "";
+  /* line 23, ../sass/layout/_product.scss */
+  .items-block .items-list a.item-unit .item-thumb {
+    text-align: center; }
+    /* line 25, ../sass/layout/_product.scss */
+    .items-block .items-list a.item-unit .item-thumb img {
+      margin-bottom: -8px; }
+  /* line 29, ../sass/layout/_product.scss */
+  .items-block .items-list a.item-unit .item-detail {
+    border-top: 3px solid #8bc4ea;
+    position: relative; }
+    /* line 32, ../sass/layout/_product.scss */
+    .items-block .items-list a.item-unit .item-detail:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -3px;
+      left: 0px;
+      height: 3px;
+      width: 0px;
+      background-color: #3498DB; }
+    /* line 43, ../sass/layout/_product.scss */
+    .items-block .items-list a.item-unit .item-detail h4.item-title {
+      margin: 0px;
+      padding: 10px 10px 10px 55px; }
+      /* line 47, ../sass/layout/_product.scss */
+      .items-block .items-list a.item-unit .item-detail h4.item-title:before {
+        font-family: FontAwesome;
+        content: "\f275";
         display: block;
         position: absolute;
-        top: -3px;
+        top: 0px;
         left: 0px;
-        height: 3px;
-        width: 0px;
-        background-color: #3498DB; }
-      /* line 43, ../sass/layout/_product.scss */
-      .items-block .items-list a.item-unit .item-detail h4.item-title {
-        margin: 0px;
-        padding: 10px 10px 10px 55px; }
-        /* line 47, ../sass/layout/_product.scss */
-        .items-block .items-list a.item-unit .item-detail h4.item-title:before {
-          font-family: FontAwesome;
-          content: "\f275";
-          display: block;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          height: 100%;
-          background-color: #3498DB;
-          padding: 10px 15px;
-          color: #FFFFFF; }
-    /* line 64, ../sass/layout/_product.scss */
-    .items-block .items-list a.item-unit:hover .item-detail:after {
-      width: 100%;
-      right: 0px; }
+        height: 100%;
+        background-color: #3498DB;
+        padding: 10px 15px;
+        color: #FFFFFF; }
+  /* line 64, ../sass/layout/_product.scss */
+  .items-block .items-list a.item-unit:hover .item-detail:after {
+    width: 100%;
+    right: 0px; }
 
 /* button style */
 /* line 2, ../sass/modules/_btn.scss */
