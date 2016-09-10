@@ -1,10 +1,9 @@
 /* ------------susy-------- */
 $total-columns : 12;
-$column-width : 5em;
+$column-width : 4.5em;
 $gutter-width : 1em;
 $grid-padding : $gutter-width;
-$from-direction: right;
-$omega-float : left;
+
 
 $default-transition-delay    : 0s;
 @include border-box-sizing;
@@ -12,6 +11,7 @@ $default-transition-delay    : 0s;
 $small : 30em;
 $xmedium : 34em;
 $medium : 45em;
+$xslarg : 55em;
 $slarg : 65em;
 $larg : 75em;
 

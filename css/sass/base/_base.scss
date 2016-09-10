@@ -11,8 +11,8 @@ body,html{
 }
 body {
 
-	font-family : $web_yekan;
-	direction : rtl;
+	direction: ltr;
+	text-align : left;
 	font-size : 95%;
 	line-height : 170%;
 	font-weight: normal;
@@ -20,10 +20,7 @@ body {
 	background-color : $grey2;
 	margin : auto;
 	z-index : 1;
-	form{
-		direction: rtl;
-		text-align: right;
-	}
+
 	p{
 		text-align : justify;
 		color : $grey4;

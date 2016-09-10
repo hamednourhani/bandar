@@ -1,0 +1,33 @@
+.top-bar{
+  max-height : 50px;
+  background-color: $navy;
+  color : $white;
+  ul{
+    padding : 0px;
+    margin: 0px;
+    li{
+      display : inline-block;
+      a{
+        @extend .def-transition;
+        display : block;
+        height : 100%;
+        padding : 5px;
+        background-color: transparent;
+        &:hover{
+          background-color: $green;
+        }
+        img{
+          max-width: 20px;
+          max-height: 20px;
+        }
+        i{
+          &:before{
+            color : $grey1;
+            padding : 0px 5px;
+          }
+        }
+      }
+      
+    }
+  }
+}

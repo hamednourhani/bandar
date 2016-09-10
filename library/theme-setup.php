@@ -54,7 +54,7 @@ function itstar_ahoy() {
 
     add_filter('pre_get_posts','itstar_SearchFilter');
 
-    add_filter( 'query_vars', 'itstar_add_query_vars_filter' );
+   
 
     add_filter( 'get_search_form', 'itstar_search_form' );
 
@@ -384,9 +384,9 @@ function itstar_SearchFilter($query) {
 
 
 
-function itstar_add_query_vars_filter( $vars ){
-    $vars[] = "";
-}
+
+
+defined('ICL_LANGUAGE_CODE') or define('ICL_LANGUAGE_CODE', 'fa');
 
 function itstar_search_form( $form ) {
     global $post,$wp_query,$wpdb;
@@ -412,7 +412,7 @@ function itstar_search_form( $form ) {
 
 add_filter( 'get_search_form', 'itstar_search_form' );
 
-if ( ICL_LANGUAGE_CODE=='it' || ICL_LANGUAGE_CODE=='en'){
+if ( ICL_LANGUAGE_CODE =='it' || ICL_LANGUAGE_CODE =='en'){
 
     remove_filter('the_title', 'ztjalali_persian_num');
     remove_filter('the_content', 'ztjalali_persian_num');

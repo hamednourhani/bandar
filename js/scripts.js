@@ -24,10 +24,10 @@ jQuery(document).ready(function($){
 		var window_width = $(window).width();
 		
 		
-		responsive_container.addClass('show-menu').css({
+		responsive_container.css({
 									'height' : window_height,
 									'width' : window_height,
-								});
+								}).addClass('show-menu');
 		body.css({
 			'overflow' : 'hidden',
 		});
@@ -40,9 +40,9 @@ jQuery(document).ready(function($){
 			body.css({
 					'overflow' : 'auto',
 				});
-			responsive_container.css({
+			responsive_container.removeClass('show-menu').css({
 										'width' : menu_width,
-									}).removeClass('show-menu');
+									});
 
 			menu_toggler.show();
 	
