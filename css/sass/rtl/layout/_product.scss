@@ -1,0 +1,76 @@
+.items-block{
+  @extend .def-section;
+  background : image_url('background/pattern_012.jpg') top left repeat;
+  padding-top : 20px;
+  padding-bottom : 20px;
+  .items-list{
+    a.item-unit{
+      @extend .white-box;
+      padding : 0px;
+
+      display : block;
+      margin-bottom : 15px;
+      @include span-columns(12,12);
+      @include at-breakpoint($xmedium $medium){
+        @include span-columns(6,12);
+        &:nth-of-type(2n){
+          @include omega;
+        }
+      }
+      @include at-breakpoint($medium){
+        @include span-columns(4,12);
+        &:nth-of-type(3n){
+          @include omega;
+        }
+      }
+      .item-thumb{
+        text-align: center;
+        img{
+          margin-bottom: -8px;
+        }
+      }
+      .item-detail{
+        border-top : 3px solid lighten($skyblue,20%);
+        position: relative;
+        &:after{
+          @extend .def-transition;
+          content : "";
+          display: block;
+          position: absolute;
+          top : -3px;
+          left : 0px;
+          height : 3px;
+          width : 0px;
+          background-color: $skyblue;
+        }
+        h4.item-title{
+          margin : 0px;
+          padding : 10px 10px 10px 55px;
+
+          &:before{
+            @extend .def-transition;
+            font-family: FontAwesome;
+            content : "\f275";
+            display: block;
+            position: absolute;
+            top : 0px;
+            left : 0px;
+            height : 100%;
+            background-color:$skyblue;
+            padding : 10px 15px;
+            color : $white;
+          }
+        }
+      }
+      &:hover{
+        .item-detail{
+          &:after {
+            width: 100%;
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+}

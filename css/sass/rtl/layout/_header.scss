@@ -1,0 +1,341 @@
+.site-header{
+  background-color: $grey1;
+}
+.hero{
+  overflow: hidden;
+  background: image_url('background/pattern_22.png') top left repeat;
+  .logo-wrapper{
+    background-color: $skyblue;
+    padding : 10px 0px 10px;
+    position : relative;
+    display : inline-block;
+
+    &:before{
+      position : absolute;
+      content : "";
+      display: none;
+      top : 0px;
+      right : 100%;
+      width : 200px;
+      background-color: $skyblue;
+      height : 100%;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      top : 0px;
+      left  : 100%;
+      width : 20px;
+      border-bottom: 115px solid transparent;
+      border-left: 80px solid $skyblue;
+      display: none;
+    }
+    a.site-link{
+      display : inline-block;
+      padding : 10px;
+      img{
+        max-width : 150px;
+      }
+    }
+    @include at-breakpoint($medium){
+      padding : {
+        bottom : 30px;
+        right : 20px;
+        left : 20px;
+      }
+      &:after,&:before{
+        display: block;
+      }
+    }
+  }
+  .menu-search-area{
+    display : block;
+    @include at-breakpoint($small){
+      float : right;
+    }
+    @include at-breakpoint($medium){
+      display : inline-block;
+    }
+    padding : 20px;
+    form.searchform{
+      position: relative;
+      //&:before{
+      //  position: absolute;
+      //  font-family: FontAwesome;
+      //  content : "\f002";
+      //  display: block;
+      //  top : 10px;
+      //  right : 12px;
+      //  font-size : 130%;
+      //  color : $grey3;
+      //}
+      label{
+        display : none;
+      }
+      input#s{
+        @extend .def-transition;
+        background-color: $glassyWhite;
+        border : 3px solid $grey1;
+        padding : 10px 10px 10px 10px;
+        background-color: $white;
+        width : 100%;
+        color : $grey3;
+        display : block;
+        &:focus{
+          border-color : $green;
+          color : $navy;
+          width : 100%;
+        }
+      }
+      span.searchButton{
+        position : absolute;
+        top : 10px;
+        right : 12px;
+        font-size : 130%;
+        color : $grey3;
+        cursor: pointer;
+        &:hover{
+          color : $green;
+        }
+      }
+      @include at-breakpoint($small){
+        input#s {
+          width: 170px;
+          padding-right: 40px;
+          &:focus {
+            width: 190px;
+          }
+        }
+      }
+
+    }
+
+  }
+  a.menu-toggler{
+    @extend .def-transition;
+    display : inline-block;
+    margin-top : 20px;
+    padding : 6px 4px;
+    float : right;
+    border : 1px dashed $skyblue;
+    cursor: pointer;
+    @include at-breakpoint($medium){
+      display : none;
+    }
+    i{
+      &:before{
+        @extend .def-transition;
+        padding : 3px 8px;
+        font-size: 180%;
+        color : $skyblue;
+      }
+    }
+    &:hover{
+      border-color : $green;
+      i:before{
+        color : $green;
+      }
+    }
+  }
+  .contact-wrapper{
+    margin-top : 20px;
+    float : right;
+    display : none;
+    @include at-breakpoint($xslarg){
+      display : block;
+    }
+    i{
+      float : left;
+      margin-top : 10px;
+      &:before{
+        padding : 9px;
+       border : 1px dashed $skyblue;
+        font-size: 140%;
+        color : $skyblue;
+      }
+    }
+    ul{
+
+      float : left;
+      padding : 0px 10px;
+      margin : 0px;
+      margin-right : 10px;
+      li{
+        line-height: 1.5;
+        color : darken($grey3,20%);
+        &.contact-title{
+          color : $navy;
+          font-size : 100%;
+        }
+      }
+    }
+  }
+}
+nav.main-menu {
+  width : 100%;
+  //position: relative;
+  ul.main-nav {
+    @extend .dark-box-shadow;
+    z-index: 999;
+    background-color: $navy;
+    width: 100%;
+    color: $white;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -25px;
+    position: relative;
+    display: none;
+    @include at-breakpoint($medium) {
+      display: block;
+    }
+    &:before {
+      @include single-transition(all, 2s, ease-in-out);
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -1px;
+      left: 0px;
+      right: 0px;
+      height: 2px;
+      width: 0px;
+      background-color: $green;
+    }
+    &:hover {
+      &:before {
+        right: 100%;
+        width: 100%;
+      }
+    }
+    a {
+      @extend .def-transition;
+      display: block;
+      padding: 10px 15px;
+      color: $white;
+
+      &:hover {
+        background-color: $green;
+      }
+    }
+    li {
+      position: relative;
+      display: inline-block;
+      &.menu-item-has-children {
+        &:after {
+          position: absolute;
+          top: 10px;
+          right: 2px;
+          color: $white;
+          content: "\f0d7";
+          font-family: FontAwesome;
+        }
+      }
+      &:hover {
+        & > ul.sub-menu {
+          //display : block;
+          opacity: 1;
+          visibility: visible;
+          top: 102%;
+        }
+      }
+    }
+    ul.sub-menu {
+      margin: 0px;
+      padding: 0px;
+      @extend .def-transition;
+      background-color: $navy;
+      width: 180px;
+      //display: none;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 120%;
+      left: 0px;
+      li {
+        display: block;
+        &.menu-item-has-children {
+          &:after {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            color: $white;
+            content: "\f0da";
+            font-family: FontAwesome;
+          }
+        }
+        ul.sub-menu {
+          top: 0px;
+          left: 120%;
+        }
+        &:hover {
+          & > ul.sub-menu {
+            left: 100%;
+          }
+        }
+      }
+    }
+
+  }
+  div.responsive-menu {
+    @extend .def-transition;
+    position: fixed;
+    overflow-y: auto;
+    top: 0px;
+    right: 100%;
+    width: 240px;
+    max-width: 100%;
+    background-color: $navy;
+    color: $white;
+    z-index: 999;
+    a {
+      color: $white;
+      &:hover {
+        color: $green;
+      }
+    }
+
+    display: block;
+    @include at-breakpoint($medium) {
+      display: none;
+    }
+    &.show-menu {
+      right : 0px;
+    }
+    a.close-responsive {
+      float: right;
+      display: inline-block;
+      padding: 10px;
+      i {
+        cursor: pointer;
+        &:before {
+          font-size: 160%;
+        }
+      }
+    }
+    a.responsive-logo {
+      float: right;
+      display: inline-block;
+      width: 85%;
+      padding: 10px;
+      img {
+        margin: auto;
+        max-width : 120px;
+      }
+    }
+
+    ul.responsive-nav {
+      padding: 10px;
+      li {
+        display: block;
+        a {
+          padding: 10px;
+          font-size: 110%;
+        }
+        ul.sub-menu {
+          margin: 0px;
+          margin-left: 30px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

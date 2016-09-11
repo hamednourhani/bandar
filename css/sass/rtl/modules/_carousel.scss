@@ -1,0 +1,106 @@
+.feature-posts{
+  @extend .white-box;
+  position: relative;
+  min-height : 410px;
+
+  @include at-breakpoint($xmedium){
+    min-height : 330px;
+  }
+  margin-bottom : 20px;
+  #NextPageBtnLast,#PrevPageBtnLast,
+  #NextPageBtnBest,#PrevPageBtnBest{
+    position: absolute;
+    top : 120px;
+    i{
+      &:before{
+        display : inline-block;
+        padding : 3px 10px;
+        font-size : 160%;
+        background-color: $white;
+        color: $grey3;
+        @include border-radius(30px);
+      }
+    }
+    &:hover{
+      i:before{
+        color : $red;
+      }
+    }
+  }
+  #NextPageBtnLast,
+  #NextPageBtnBest{
+    right : -1%;
+  }
+  #PrevPageBtnLast,
+  #PrevPageBtnBest{
+    left : -1%;
+  }
+  .feature-posts-wrapper {
+    direction: ltr;
+    position: absolute;
+    width : 97%;
+    .feature-posts-inner {
+      ul {
+        margin: 0px;
+        padding: 0px;
+        li {
+
+        }
+      }
+      .page-grid {
+
+        @extend .def-transition;
+        text-align: center;
+        display: block;
+        position: relative;
+        background-color: $grey2;
+        &:after{
+          @extend .def-transition;
+          content : "";
+          display : block;
+          position : absolute;
+          bottom : 0px;
+          right : 0px;
+          left : auto;
+          height : 2px;
+          width : 0px;
+          background-color: $red;
+        }
+        h3 {
+          @extend .def-transition;
+          color: $grey4;
+          padding: 20px 15px 0px;
+          margin: 0px;
+          min-height: 70px;
+          font-size : 90%;
+          font-weight: normal;
+        }
+        span {
+          color: $grey4;
+          padding: 5px 15px 20px;
+          font-size: 110%;
+          display: block;
+        }
+        .page-thumb-container {
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: -8px;
+          }
+        }
+        &:hover {
+          &:after{
+            width : 100%;
+            left : 0px;
+          }
+          h3 {
+            color: $red;
+          }
+
+        }
+      }
+    }
+  }
+}
+

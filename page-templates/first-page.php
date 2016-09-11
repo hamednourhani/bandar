@@ -20,11 +20,7 @@ get_header();
                                 <?php
                                     if(have_posts()){ ?>
                                     <div class="page-content-desc">
-                                        <header class="section-title">
-                                            <h1>
-                                                <?php the_title();?>
-                                            </h1>
-                                        </header>
+                                        
                                             <?php
                                                 while(have_posts()) { the_post();
                                                     the_content();

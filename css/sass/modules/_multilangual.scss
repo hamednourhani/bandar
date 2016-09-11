@@ -1,0 +1,24 @@
+#lang_sel_list{
+  float : right;
+  margin-right : 20px;
+  ul{
+    border-top: 0px !important;
+    padding-top: 5px !important;
+    li{
+      a{
+        color : $grey1 !important;
+        background-color: transparent;
+        &.lang_sel_sel,&.lang_sel_other{
+          background-color: transparent;
+          &:hover{
+            background-color: transparent;
+          }
+        }
+        &:hover{
+          background-color: transparent;
+          color : $green !important;
+        }
+      }
+    }
+  }
+}

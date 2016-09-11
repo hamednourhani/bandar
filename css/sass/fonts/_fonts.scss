@@ -1,13 +1,8 @@
 /* fonts */
-//@include font-face("BYekan", font-files("BYekan.ttf", "BYekan.woff"),"BYekan.eot");
-@include font-face("Yekan", font-files("Yekan.ttf", "Yekan.woff"),"Yekan.eot","Yekan.svg");
-//@include font-face("Weblogma_Yekan", font-files("Weblogma_Yekan.ttf", "Weblogma_Yekan.woff"),"Weblogma_Yekan.eot","Weblogma_Yekan.svg");
-//@include font-face("BKoodakBold", font-files("BKoodakBold.ttf", "BKoodakBold.woff"),"BKoodakBold.eot");
+// @include font-face("Bgothic", font-files("bank-gothic-medium.ttf", "bank-gothic-medium.woff"),"bank_gothic_medium.eot");
+@include font-face("open-sans", font-files("OpenSans-Regular.ttf", "OpenSans-Regular.woff"),"OpenSans-Regular.eot","OpenSans-Regular.svg");
 
-//@include font-face("Roya", font-files("IRRoya.ttf", "IRRoya.woff"),"IRRoya.eot");
-$web_yekan : "Yekan";
-//$b_koodak : "BKoodakBold";
 
-//$BYekan : "BYekan";
-//$Yekan : "Yekan";
-//$Roya : "Roya","Byekan",tahoma;
+
+// $Bgothic : "Bgothic";
+$open-sans : "open-sans","Georgia", Cambria, Times New Roman, Times, serif;

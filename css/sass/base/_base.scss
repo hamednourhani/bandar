@@ -10,7 +10,7 @@ body,html{
 	@include single-transition(all 0.4s);
 }
 body {
-
+	font-family: $open-sans;
 	direction: ltr;
 	text-align : left;
 	font-size : 95%;
