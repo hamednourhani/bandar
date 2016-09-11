@@ -83,12 +83,18 @@ function itstar_register_required_plugins() {
 //			'source'             => get_template_directory() . '/plugins/redux-framework.3.6.1.zip', // The plugin source.
 //			'required'           => true
 //			),
-//        array(
-//            'name'               => 'CMB2', // The plugin name.
-//            'slug'               => 'cmb2', // The plugin slug (typically the folder name).
-//            'source'             => get_template_directory() . '/plugins/cmb2.zip', // The plugin source.
-//            'required'           => true
-//        ),
+        array(
+            'name'               => 'CMB2', // The plugin name.
+            'slug'               => 'cmb2', // The plugin slug (typically the folder name).
+            'source'             => get_template_directory() . '/plugins/cmb2.zip', // The plugin source.
+            'required'           => true
+        ),
+        array(
+            'name'               => 'WPML', // The plugin name.
+            'slug'               => 'sitepress-multilingual-cms', // The plugin slug (typically the folder name).
+            'source'             => get_template_directory() . '/plugins/sitepress-multilingual-cms-3.3.6.zip', // The plugin source.
+            'required'           => true
+        ),
 
 
 //		array(
