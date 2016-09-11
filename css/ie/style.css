@@ -897,6 +897,7 @@ body, html {
 
 /* line 12, ../sass/base/_base.scss */
 body {
+  font-family: "open-sans", "Georgia", Cambria, Times New Roman, Times, serif;
   direction: ltr;
   text-align: left;
   font-size: 95%;
@@ -1683,7 +1684,7 @@ nav.main-menu {
         display: block;
         content: "";
         position: absolute;
-        top: 13px;
+        top: 6px;
         left: 5px;
         border: 3px solid #d1d1d1;
         height: 10px;
@@ -1694,7 +1695,7 @@ nav.main-menu {
         display: block;
         content: "";
         position: absolute;
-        top: 10px;
+        top: 8px;
         left: -1px;
         border: 3px solid #787878;
         height: 10px;

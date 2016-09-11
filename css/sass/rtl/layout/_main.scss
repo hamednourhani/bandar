@@ -4,12 +4,14 @@
    @include span-columns(12,12);
    @include at-breakpoint($medium){
      @include span-columns(9,12);
+     margin-right : auto;
    }
  }
   .secondray{
     @include span-columns(12,12);
     @include at-breakpoint($medium){
       @include span-columns(3 omega,12);
+      margin-right : auto;
     }
   }
   &.without-sidebar{
@@ -34,97 +36,38 @@
 
 //---------------------Primary-----------------------
 .primary {
-  padding-top : 30px;
   article.single-article{
-    p{
-      padding : 10px 15px;
-    }
   }
   .page-content-desc{
-    p{
-      padding : 10px 15px;
-    }
   }
   .archive-title{
     form.searchform{
-      position: relative;
 
       label{
-        //display : none;
-        display : inline-block;
-        padding : 9px 0px;
-        width : 110px;
-        float : left;
-        font-size : 120%;
-        color : $navy;
-        font-weight: 600;
+        float : right;
       }
       input#s{
-        @extend .def-transition;
-        background-color: $glassyWhite;
-        border : 0px;
-        outline : none;
-        padding : 10px 10px 10px 10px;
-        background-color: transparent;
-        width : 100%;
-        color : $grey4;
-        display : block;
-        width : calc(100% - 110px);
-        float : right;
-        font-size : 120%;
-        &:focus{
-          background-color: $grey2;
-        }
+        float : left;
       }
       span.searchButton{
-        position : absolute;
-        top : 7px;
-        right : 15px;
-        font-size : 160%;
-        color : $grey3;
-        cursor: pointer;
-        &:hover{
-          color : $green;
-        }
+        left: 15px;
+        right : auto;
       }
 
 
     }
   }
   .archive-article{
-    overflow: hidden;
-    width : 100%;
-    border-top : 1px dashed $grey3;
-    padding-top : 10px;
-    padding-bottom : 10px;
-    margin-right : 15px;
-    margin-left: 15px;
+    margin-right: auto;
     .featured-image{
-      float : left;
-      margin-right : 15px;
-      img{
-        @extend .def-transition;
-        background-color: $grey3;
-        padding : 5px;
-        &:hover{
-          background-color: $skyblue;
-        }
-      }
+      float : right;
+      margin-left: 15px;
+      margin-right : auto;
     }
 
     .article-body{
-      float : left;
-      width : calc(100% - 170px);
-      overflow: hidden;
+      float : right;
       .article-title{
-        a{
-          color : $skyblue;
-        }
-        margin : 0px;
-        margin-top : 10px;
-      }
-      p{
-        margin : 5px;
       }
 
     }

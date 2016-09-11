@@ -1,160 +1,84 @@
 
 #commentform{
   label{
-    float: right;
-    padding: 0 10px;
-    display: inline-block;
-    width: 40%;
-  }
-  .form-allowed-tags{
-    display: none;
+    float: left;
   }
 }
 
 .comment-area{
-  .comment-reply-title{
-    margin : 0px;
-  }
   .comments-title,.comment-reply-title{
-    display : inline-block;
-    position: relative;
-    padding :20px 15px;
-    font-size: 120%;
-
 
     &:after{
-      display : block;
-      content : "";
-      width : 50px;
-      height : 3px;
-      background-color : $skyblue;
-      position : absolute;
-      top : 50%;
-      left : 100%;
+      left : auto;
+      right: 100%;
     }
   }
 
 
-
-  .comment{
-    display : block;
-    overflow : hidden;
-    .comment-body{
-
-      overflow : hidden;
-    }
-  }
 
 
   .depth-1{
     @include at-breakpoint($medium) {
-      margin-left : 0px;
-      margin-right : auto;
+      margin-left : auto;
+      margin-right : 0px;
     }
   }
   .depth-2{
     @include at-breakpoint($medium) {
-      margin-left : 20px;
-      margin-right : auto;
+      margin-right : 20px;
+      margin-left : auto;
     }
   }
   .depth-3{
     @include at-breakpoint($medium) {
-      margin-left : 40px;
-      margin-right : auto;
+      margin-right : 40px;
+      margin-left : auto;
     }
   }
   .depth-4{
     @include at-breakpoint($medium) {
-      margin-left : 60px;
-      margin-right : auto;
+      margin-right : 60px;
+      margin-left : auto;
     }
   }
   article{
-    position: relative;
     .comment-meta{
-      width: 80px;
-      float : left;
-      img.avatar{
-        @include border-radius(50%);
-        background-color: $white;
-        padding : 3px;
-      }
+      float : right;
       .comment-author {
-        text-align: center;
         .fn {
-          color: $skyblue;
-          font-size: 90%;
-          margin-top: -5px;
-        }
-        span.says{
-          display: none;
         }
       }
       .comment-metadata {
-        position: absolute;
-        top : 5px;
-        right : 10px;
-        font-size : 80%;
+        left: 10px;
+        right : auto;
         .edit-link {
           padding: 5px;
           color: $skyblue;
           &:before {
             @extend .fa;
             content: "\f040";
-            padding: 5px;
-            vertical-align: middle;
           }
         }
       }
     }
     .reply{
-      font-size: 80%;
-      position: absolute;
-      bottom : 5px;
-      right: 10px;
+      left: 10px;
+      right: auto;
       i:before{
-        padding-left : 5px;
-        color : $skyblue;
+        padding-left : 0px;
+        padding-right : 5px;
       }
       //margin-bottom :15px;
     }
 
     .comment-content{
-      @extend .white-box;
-      background-color: $grey2;
-      width : calc(100% - 90px);
-      float : right;
-      padding : 20px;
-      min-height: 120px;
+      float : left;
 
     }
 
-  }
-}
-.comment-list{
-  margin: 0px;
-  padding: 0px;
-  li{
-    &.even{
-      .comment-content{
-        background-color: $white;
-      }
-    }
-    &.odd{
-      .comment-content{
-        background-color: $grey2;
-      }
-    }
-
-    ol.children{
-      padding : 0px;
-    }
-    padding: 0px;
   }
 }
 #commentform{
-  padding: 10px;
   p{
     margin : 0px;
     &.comment-form-author,
@@ -164,38 +88,15 @@
       margin : 10px auto;
       i:before{
         color : $green;
-        padding-right : 5px;
+        padding-right : 0px;
+        padding-left : 5px;
       }
     }
   }
   label{
-    float: left;
-  }
-  textarea{
-    @extend .def-transition;
-    max-height: 150px;
-    padding : 5px 10px;
-    @include border-radius(4px);
-    border :3px solid $grey3;
-    outline : none;
-    &:focus{
-      border-color : $green;
-    }
-  }
-  input{
-    @extend .def-transition;
-    padding : 10px 15px;
-    @include border-radius(4px);
-    border :3px solid $grey3;
-    outline : none;
-    &:focus{
-      border-color : $green;
-    }
+    float: right;
   }
   .comment-notes,.required{
-    font-size : 80%;
-    padding-bottom : 5px;
-    display : inline-block;
   }
 
 }

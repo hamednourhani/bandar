@@ -1,138 +1,72 @@
 .footer-widget-area{
-  position: relative;
-  background-color: $navy;
-  color : $grey1;
-  border-top : 3px solid $green;
   &:before{
     @include single-transition(all ,2s , ease-in-out);
-    display: block;
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0px;
-    height: 3px;
-    width: 0px;
-    background-color: $skyblue;
+    right: 0px;
+    left: auto;
   }
   &:hover{
     &:before {
-      width: 100%;
-      right: 0px;
+      left: 0px;
+      right: auto;
     }
   }
   .footer-widget-col{
     @include span-columns(12,12);
     @include at-breakpoint($xmedium $medium){
       @include span-columns(6,12);
+      margin-right : auto;
       &:nth-of-type(2n){
         @include omega;
+        margin-right : auto;
       }
     }
     @include at-breakpoint($medium){
       @include span-columns(3,12);
+      margin-right : auto;
       &:nth-of-type(4n){
         @include omega;
+        margin-right : auto;
+
       }
     }
   }
   aside.widget{
-    font-size : 90%;
-    margin : {
-      top : 15px;
-      bottom : 15px;
-    }
-    a{
-      @extend .def-transition;
-      color : $skyblue;
-      &:hover{
-        color : $green;
-      }
-    }
-    p {
-      color : $grey1;
-      margin : 5px;
-    }
     h4.widgettitle{
-      margin : 0px;
-      font-size : 110%;
       padding :{
-        left : 30px;
-        right : 10px;
-        bottom : 10px;
-        top : 10px;
-              }
-      color : $white;
-      position : relative;
+        left : 10px;
+        right : 30px;
+      }
       &:before{
-        display: block;
-        content: "";
-        position: absolute;
-        top: 13px;
-        left: 3px;
-        border: 3px solid $skyblue;
-        height: 15px;
-        width: 15px;
-        transform: rotate(10deg);
+        right: 3px;
+        left: auto;
       }
       &:after{
-        display: block;
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: -3px;
-        border: 3px solid $green;
-        height: 15px;
-        width: 15px;
-        transform: rotate(-20deg);
+        right: -3px;
+        left: auto;
       }
-    }
-    ul{
-      margin : 0px;
-      padding : 10px;
     }
     &.widget_last_product_widget{
       ul{
-        padding : 0px;
         li{
-          padding : 0px;
-          border-top : 1px solid lighten($navy,10%);
           a{
             @extend .def-transition;
-            display : block;
-            width : 100%;
-            overflow: hidden;
-            padding : 5px;
             div{
-              float : left;
-              display : inline-block;
+              float : right;
               img{
-                margin-right : 8px;
+                margin-right : auto;
+                margin-left : 8px;
+
               }
-              span{
-                padding-top: 5px;
-                display: inline-block;
-              }
-            }
-            &:hover{
-              background-color: darken($navy,5%);
             }
           }
         }
       }
     }
     &.widget_contact_info_widget{
-      p{
-        border-top : 1px solid lighten($navy,10%);
-        padding :{
-          top : 5px;
-          bottom : 5px;
-        }
-      }
       i.fa{
         &:before{
-          font-size : 120%;
-          color : $skyblue;
-          margin-right : 8px;
+          margin-left : 8px;
+          margin-right : auto;
 
         }
       }
@@ -140,22 +74,7 @@
   }
 }
 .site-footer{
-  background-color: darken($navy,5%);
-  padding : 10px;
-  .site-credit{
-    font-size: 90%;
-    color : $grey1;
-  }
   .created-by{
-    font-size: 90%;
-    float : right;
-    color : $grey1;
-    a{
-      @extend .def-transition;
-      color : $skyblue;
-      &:hover{
-        color : $green;
-      }
-    }
+    float : left;
   }
 }

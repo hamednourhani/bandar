@@ -1,104 +1,32 @@
 .secondary{
-  padding-top: 30px;
-  overflow: hidden;
     aside.widget{
       @extend .white-box;
-      font-size : 90%;
-      margin : {
-        top : 10px;
-        bottom : 10px;
-      }
-      a{
-        @extend .def-transition;
-        color : darken($grey3,35%);
-        &:hover{
-          color : $skyblue;
-        }
-      }
-      p {
-        margin : 5px;
-      }
       h4.widgettitle{
-        margin : 0px;
-        font-size : 110%;
         padding :{
-          left : 30px;
-          right : 10px;
-          bottom : 5px;
-          top : 5px;
+          left : 10px;
+          right : 30px;
         }
-        position : relative;
         &:before{
-          display: block;
-          content: "";
-          position: absolute;
-          top: 13px;
-          left: 5px;
-          border: 3px solid $grey3;
-          height: 10px;
-          width: 10px;
-          transform: rotate(10deg);
+          right: 5px;
+          left: auto;
+          top : 6px;
         }
         &:after{
-          display: block;
-          content: "";
-          position: absolute;
-          top: 10px;
-          left: -1px;
-          border: 3px solid darken($grey3,35%);
-          height: 10px;
-          width: 10px;
-          transform: rotate(-20deg);
-        }
-      }
-      ul{
-        margin : 0px;
-        padding : 10px;
-        li{
-          width : 100%;
-          border-top : 1px solid $grey2;
-          padding : 5px;
+          right: -1px;
+          left: auto;
+          top : 8px;
         }
       }
       &.widget_search{
         form.searchform{
-          position: relative;
-          label{
-            display : none;
-          }
-          input#s{
-            @extend .def-transition;
-            background-color: $glassyWhite;
-            border : 3px solid $grey1;
-            padding : 10px 10px 10px 10px;
-            background-color: $white;
-            width : 100%;
-            color : $grey3;
-            display : block;
-            &:focus{
-              border-color : $green;
-              color : $navy;
-              width : 100%;
-            }
-          }
           span.searchButton{
-            position : absolute;
-            top : 10px;
-            right : 12px;
-            font-size : 130%;
-            color : $grey3;
-            cursor: pointer;
-            &:hover{
-              color : $green;
-            }
+            left: 12px;
+            right : auto;
           }
           @include at-breakpoint($small){
             input#s {
-              width: 170px;
-              padding-right: 40px;
-              &:focus {
-                width: 190px;
-              }
+              padding-left: 40px;
+              padding-right: 0px;
             }
           }
 
@@ -106,46 +34,28 @@
       }
       &.widget_last_product_widget{
         ul{
-          padding : 0px;
           li{
-              padding : 0px;
             a{
-              @extend .def-transition;
-              display : block;
-              width : 100%;
-              overflow: hidden;
-              padding : 5px;
               div{
-                float : left;
-                display : inline-block;
+                float : right;
                 img{
-                  margin-right : 8px;
+                  margin-left : 8px;
+                  margin-right : auto;
                 }
                  span{
-                  padding-top: 5px;
-                  display: inline-block;
                 }
               }
               &:hover{
-                background-color: $grey1;
               }
             }
           }
         }
       }
       &.widget_contact_info_widget{
-        p{
-          border-top : 1px solid $grey1;
-          padding :{
-            top : 5px;
-            bottom : 5px;
-          }
-        }
         i.fa{
           &:before{
-            font-size : 120%;
-            color : $skyblue;
-            margin-right : 8px;
+            margin-right : auto;
+            margin-left: 8px;
 
           }
         }
