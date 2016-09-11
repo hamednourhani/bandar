@@ -27,9 +27,9 @@
 
 						
 							
-							<?php if( 'video' == get_post_type() ){
+							<?php if( 'product' == get_post_type() ){
 											// $cat_list =get_the_term_list( get_the_ID(), 'news_cat', '<span class="cats-title">' . __( 'News category :', 'itstar' ) . '</span> ', ', ' );
-											$tag_list =get_the_term_list( get_the_ID(), 'video_tag', '', ', ' );
+											$tag_list =get_the_term_list( get_the_ID(), 'product_cat', '', ', ' );
 
 											?>
 								
@@ -39,7 +39,7 @@
 
 
 												<li class="meta-tag">
-													<i class="fa fa-tags"></i>
+													<i class="fa fa-folder-open"></i>
 													<?php echo $tag_list ;?>
 												</li>
 									<?php } ?>
@@ -65,29 +65,12 @@
 
 							<?php } ?>
 
-							<?php if( 'item' == get_post_type() ){
-								// $cat_list =get_the_term_list( get_the_ID(), 'news_cat', '<span class="cats-title">' . __( 'News category :', 'itstar' ) . '</span> ', ', ' );
-								$tag_list =get_the_term_list( get_the_ID(), 'item_cat', '', ', ' );
 
-								?>
-
-
-
-								<?php if ( $tag_list) { ?>
-
-
-									<li class="meta-tag">
-										<i class="fa fa-folder-open" aria-hidden="true"></i>
-										<?php echo $tag_list ;?>
-									</li>
-								<?php } ?>
-
-							<?php } ?>
 
 
 							<?php
 
-								if ( in_array( get_post_type(), array( 'post', 'video','item' ) ) ) {
+								if ( in_array( get_post_type(), array( 'post' ) ) ) {
 									$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 

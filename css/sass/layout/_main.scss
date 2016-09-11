@@ -3,21 +3,19 @@
  .primary{
    @include span-columns(12,12);
    @include at-breakpoint($medium){
-     @include span-columns(8,12);
+     @include span-columns(9,12);
    }
  }
   .secondray{
     @include span-columns(12,12);
     @include at-breakpoint($medium){
-      @include span-columns(4 omega,12);
+      @include span-columns(3 omega,12);
     }
   }
   &.without-sidebar{
     .primary{
-      @include span-columns(12,12);
-      @include at-breakpoint($medium){
-        @include span-columns(12,12);
-      }
+      width : 100%;
+      float : none;
     }
     .secondray{
       display : none;
@@ -25,13 +23,109 @@
   }
   &.full-width{
     .primary{
-      @include span-columns(12,12);
-      @include at-breakpoint($medium){
-        @include span-columns(12,12);
-      }
+      width : 100%;
+      float : none;
     }
     .secondray{
       display : none;
+    }
+  }
+}
+
+//---------------------Primary-----------------------
+.primary {
+  padding-top : 30px;
+  article.single-article{
+    p{
+      padding : 10px 15px;
+    }
+  }
+  .page-content-desc{
+    p{
+      padding : 10px 15px;
+    }
+  }
+  .archive-title{
+    form.searchform{
+      position: relative;
+
+      label{
+        //display : none;
+        display : inline-block;
+        padding : 9px 0px;
+        width : 110px;
+        float : left;
+        font-size : 120%;
+        color : $navy;
+        font-weight: 600;
+      }
+      input#s{
+        @extend .def-transition;
+        background-color: $glassyWhite;
+        border : 0px;
+        outline : none;
+        padding : 10px 10px 10px 10px;
+        background-color: transparent;
+        width : 100%;
+        color : $grey4;
+        display : block;
+        width : calc(100% - 110px);
+        float : right;
+        font-size : 120%;
+        &:focus{
+          background-color: $grey2;
+        }
+      }
+      span.searchButton{
+        position : absolute;
+        top : 7px;
+        right : 15px;
+        font-size : 160%;
+        color : $grey3;
+        cursor: pointer;
+        &:hover{
+          color : $green;
+        }
+      }
+
+
+    }
+  }
+  .archive-article{
+    overflow: hidden;
+    width : 100%;
+    border-top : 1px dashed $grey3;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    margin-right : 15px;
+    .featured-image{
+      float : left;
+      margin-right : 15px;
+      img{
+        @extend .def-transition;
+        background-color: $grey3;
+        padding : 5px;
+        &:hover{
+          background-color: $skyblue;
+        }
+      }
+    }
+
+    .article-body{
+      float : left;
+      width : calc(100% - 170px);
+      overflow: hidden;
+      .article-title{
+        a{
+          color : $skyblue;
+        }
+        margin : 0px;
+        margin-top : 10px;
+      }
+      p{
+        margin : 5px;
+      }
+
     }
   }
 }

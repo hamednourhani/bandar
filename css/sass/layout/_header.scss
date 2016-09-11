@@ -1,3 +1,6 @@
+.site-header{
+  background-color: $grey1;
+}
 .hero{
   overflow: hidden;
   background: image_url('background/pattern_22.png') top left repeat;
@@ -53,24 +56,21 @@
     @include at-breakpoint($medium){
       display : inline-block;
     }
-
     padding : 20px;
     form.searchform{
       position: relative;
-      &:before{
-        position: absolute;
-        font-family: FontAwesome;
-
-        content : "\f002";
-        display: block;
-        top : 10px;
-        right : 12px;
-        font-size : 130%;
-        color : $grey3;
-      }
+      //&:before{
+      //  position: absolute;
+      //  font-family: FontAwesome;
+      //  content : "\f002";
+      //  display: block;
+      //  top : 10px;
+      //  right : 12px;
+      //  font-size : 130%;
+      //  color : $grey3;
+      //}
       label{
         display : none;
-
       }
       input#s{
         @extend .def-transition;
@@ -85,6 +85,17 @@
           border-color : $green;
           color : $navy;
           width : 100%;
+        }
+      }
+      span.searchButton{
+        position : absolute;
+        top : 10px;
+        right : 12px;
+        font-size : 130%;
+        color : $grey3;
+        cursor: pointer;
+        &:hover{
+          color : $green;
         }
       }
       @include at-breakpoint($small){
@@ -164,6 +175,7 @@ nav.main-menu {
   width : 100%;
   //position: relative;
   ul.main-nav {
+    @extend .dark-box-shadow;
     z-index: 999;
     background-color: $navy;
     width: 100%;
@@ -306,6 +318,7 @@ nav.main-menu {
       padding: 10px;
       img {
         margin: auto;
+        max-width : 120px;
       }
     }
 

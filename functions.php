@@ -20,7 +20,7 @@ if( class_exists("Kirki") ){
 
 require_once get_template_directory() . '/library/theme-setup.php';
 require_once get_template_directory() . '/library/cmb-functions.php' ;
-//require_once get_template_directory().'/library/register-widgets.php';
+require_once get_template_directory().'/library/register-widgets.php';
 require_once get_template_directory().'/library/register-menu-walkers.php';
 require_once get_template_directory().'/library/register-scripts-styles.php';
 require_once get_template_directory().'/library/extra-functions.php';

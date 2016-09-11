@@ -1,7 +1,7 @@
 
 #commentform{
   label{
-    float: left;
+    float: right;
     padding: 0 10px;
     display: inline-block;
     width: 40%;
@@ -21,25 +21,16 @@
     padding :20px 15px;
     font-size: 120%;
 
-    &:before{
-      display : block;
-      content : "";
-      width : 1000%;
-      height : 3px;
-      background-color : $grey1;
-      position : absolute;
-      top : 50%;
-      right : 100%;
-    }
+
     &:after{
       display : block;
       content : "";
-      width : 30px;
+      width : 50px;
       height : 3px;
-      background-color : $red;
+      background-color : $skyblue;
       position : absolute;
       top : 50%;
-      right : 100%;
+      left : 100%;
     }
   }
 
@@ -57,33 +48,33 @@
 
   .depth-1{
     @include at-breakpoint($medium) {
-      margin-left : auto;
-      margin-right : 0px;
+      margin-left : 0px;
+      margin-right : auto;
     }
   }
   .depth-2{
     @include at-breakpoint($medium) {
-      margin-left : auto;
-      margin-right : 20px;
+      margin-left : 20px;
+      margin-right : auto;
     }
   }
   .depth-3{
     @include at-breakpoint($medium) {
-      margin-left : auto;
-      margin-right : 40px;
+      margin-left : 40px;
+      margin-right : auto;
     }
   }
   .depth-4{
     @include at-breakpoint($medium) {
-      margin-left : auto;
-      margin-right : 60px;
+      margin-left : 60px;
+      margin-right : auto;
     }
   }
   article{
     position: relative;
     .comment-meta{
       width: 80px;
-      float : right;
+      float : left;
       img.avatar{
         @include border-radius(50%);
         background-color: $white;
@@ -92,7 +83,7 @@
       .comment-author {
         text-align: center;
         .fn {
-          color: $red;
+          color: $skyblue;
           font-size: 90%;
           margin-top: -5px;
         }
@@ -103,11 +94,11 @@
       .comment-metadata {
         position: absolute;
         top : 5px;
-        left : 10px;
+        right : 10px;
         font-size : 80%;
         .edit-link {
           padding: 5px;
-          color: $red;
+          color: $skyblue;
           &:before {
             @extend .fa;
             content: "\f040";
@@ -121,21 +112,22 @@
       font-size: 80%;
       position: absolute;
       bottom : 5px;
-      left : 10px;
+      right: 10px;
       i:before{
-        padding-right : 5px;
-        color : $red2;
+        padding-left : 5px;
+        color : $skyblue;
       }
       //margin-bottom :15px;
     }
 
     .comment-content{
       @extend .white-box;
-      background-color: $grey1;
+      background-color: $grey2;
       width : calc(100% - 90px);
-      float : left;
+      float : right;
       padding : 20px;
       min-height: 120px;
+
     }
 
   }
@@ -151,7 +143,7 @@
     }
     &.odd{
       .comment-content{
-        background-color: $grey1;
+        background-color: $grey2;
       }
     }
 
@@ -171,26 +163,39 @@
     &.form-submit{
       margin : 10px auto;
       i:before{
-        color : darken($grey3,20%);
-        padding-left : 5px;
+        color : $green;
+        padding-right : 5px;
       }
     }
   }
   label{
-    float: right;
+    float: left;
   }
   textarea{
+    @extend .def-transition;
     max-height: 150px;
     padding : 5px 10px;
     @include border-radius(4px);
-    border-color : $grey3;
+    border :3px solid $grey3;
     outline : none;
+    &:focus{
+      border-color : $green;
+    }
   }
   input{
-    padding : 5px 10px;
+    @extend .def-transition;
+    padding : 10px 15px;
     @include border-radius(4px);
-    border-color : $grey3;
+    border :3px solid $grey3;
     outline : none;
+    &:focus{
+      border-color : $green;
+    }
+  }
+  .comment-notes,.required{
+    font-size : 80%;
+    padding-bottom : 5px;
+    display : inline-block;
   }
 
 }

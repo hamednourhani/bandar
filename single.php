@@ -5,24 +5,21 @@
 			<?php while(have_posts()) { the_post(); ?>
 
 
-				
 				<div class="site-content">
+					<div class="banner-wrapper">
+						<?php get_template_part('library/banner','maker');?>
+					</div>
 					<section class="layout">
 						<?php get_sidebar("top"); ?>
 						<div class="primary">
 							
 								
 							<article class="hentry single-article">
-<!--								<div class="featured-image">-->
-<!--									<a href="--><?php //the_permalink(); ?><!--">-->
-<!--										--><?php //the_post_thumbnail('post-banner'); ?>
-<!--									</a>-->
-<!--								</div>-->
-								
-								<header class="article-title">
-										<h1 class="section-title">
-											<?php the_title(); ?>
-										</h1>
+
+								<header class="section-title">
+									<h1>
+										<?php the_title();?>
+									</h1>
 								</header>
 								<main class="article-body">
 									<?php the_content(); ?>
@@ -44,7 +41,9 @@
 							<?php get_sidebar(); ?>
 						</div><!-- secondary -->
 					</section>
+					<?php get_template_part('library/last','products');?>
 				</div>
+
 			<?php } ?>
 
 		<?php } else { ?>	
@@ -55,6 +54,7 @@
 						<?php get_sidebar(); ?>
 					</div><!-- secondary -->
 				</section>
+				<?php get_template_part('library/last','products');?>
 			</div>
 
 		<?php } ?>

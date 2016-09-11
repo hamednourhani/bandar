@@ -45,7 +45,7 @@ function itstar_ahoy() {
     add_filter( 'the_content', 'itstar_filter_ptags_on_images' );
     // cleaning up excerpt
     add_filter( 'excerpt_more', 'itstar_excerpt_more' );
-
+    add_filter( 'excerpt_length', 'itstar_excerpt_length', 999 );
     //hide admin for anonymous users
     add_filter( 'show_admin_bar' , 'itstar_disable_admin_bar');
 
@@ -76,6 +76,7 @@ add_action( 'after_setup_theme', 'itstar_ahoy' );
 add_image_size( 'slider', 960, 500, array( 'center', 'center' ) );
 add_image_size( 'post-thumb', 150, 150, array( 'center', 'center' ) );
 add_image_size( 'product-thumb', 300, 180, array( 'center', 'center' ) );
+add_image_size( 'widget-thumb', 35, 35, array( 'center', 'center' ) );
 add_image_size( 'post-banner', 960, 300, array( 'center', 'center' ) );
 
 
@@ -86,6 +87,7 @@ function itstar_custom_image_sizes( $sizes ) {
         'slider' => __('960px by 500px'),
         'post-thumb' => __('150px by 150px'),
         'product-thumb' => __('300px by 180px'),
+        'widget-thumb' => __('35px by 35px'),
         'post-banner' => __('960px by 300px'),
 
 
@@ -297,15 +299,7 @@ function itstar_register_sidebars() {
         'before_title' => '<h4 class="widgettitle">',
         'after_title' => '</h4>',
     ));
-    register_sidebar(array(
-        'id' => 'ad-sidebar',
-        'name' => __( 'Ad Sidebar', 'itstar' ),
-        'description' => __( 'sidebar for ads', 'itstar' ),
-        'before_widget' => '<aside id="%1$s" class="top-ad widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h4 class="widgettitle">',
-        'after_title' => '</h4>',
-    ));
+
 
 }
 
@@ -396,17 +390,21 @@ function itstar_search_form( $form ) {
 
     if(ICL_LANGUAGE_CODE == 'en' || ICL_LANGUAGE_CODE == 'it'){
         $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-      <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
-      <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder'.__("Search...","itstar").'/>
-      <input type="hidden" name="lang" value="'.ICL_LANGUAGE_CODE.'"/>
-      </div>
-      </form>';
+          <div>
+              <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+              <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__("Search...","itstar").'"/>
+               <span class="searchButton"><i class="fa fa-search"></i></span>
+              <input type="hidden" name="lang" value="'.ICL_LANGUAGE_CODE.'"/>
+          </div>
+         </form>';
     } else {
         $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-      <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
-      <input type="text" value="' . get_search_query() . '" name="s" id="s" '.__("Search...","itstar").'/>
-      </div>
-      </form>';
+          <div>
+              <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+              <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__("Search...","itstar").'"/>
+              <span class="searchButton"><i class="fa fa-search"></i></span>
+          </div>
+         </form>';
     }
 
     return $form;
@@ -440,6 +438,11 @@ function itstar_excerpt_more($more) {
     // edit here if you like
     return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'itstar' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more &raquo;', 'itstar' ) .'</a>';
 }
+
+function itstar_excerpt_length( $length ) {
+    return 34;
+}
+
 
 //hide admin bar from front end
 function itstar_disable_admin_bar(){

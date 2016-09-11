@@ -13,26 +13,27 @@ get_header();
                     <div class="banner-wrapper">
                         <?php get_template_part('library/banner','maker');?>
                     </div>
-                    <?php get_template_part('library/last','products');?>
-                    <section class="layout">
+                         <?php get_template_part('library/last','products');?>
 
-                        <div class="primary">
-                            <?php
-                                if(have_posts()){ ?>
-                                <div class="page-content-desc">
-                                    <h4 class="section-title">
-                                        <?php the_title();?>
-                                    </h4>
-                                        <?php
-                                            while(have_posts()) { the_post();
-                                                the_content();
-                                            }
-                                        ?>
-                                </div>
-                            <?php  }  ?>
-                        </div><!-- primary -->
-
-                    </section>
+                        <section class="full-width-wrapper">
+                            <div class="primary">
+                                <?php
+                                    if(have_posts()){ ?>
+                                    <div class="page-content-desc">
+                                        <header class="section-title">
+                                            <h1>
+                                                <?php the_title();?>
+                                            </h1>
+                                        </header>
+                                            <?php
+                                                while(have_posts()) { the_post();
+                                                    the_content();
+                                                }
+                                            ?>
+                                    </div>
+                                <?php  }  ?>
+                            </div><!-- primary -->
+                        </section>
                 </div>
     </main>
 <?php get_footer(); ?>

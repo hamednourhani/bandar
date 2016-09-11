@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 		$('div#menuSearchArea').fadeToggle();
 	});
 	
-	$('.searchform i.fa-search').click(function(event){
+	$('.searchform span.searchButton').click(function(event){
 		console.log("search query");
 		$(this).parent().parent(".searchform").trigger("submit");
 	});
@@ -24,10 +24,10 @@ jQuery(document).ready(function($){
 		var window_width = $(window).width();
 		
 		
-		responsive_container.css({
+		responsive_container.addClass('show-menu').css({
 									'height' : window_height,
 									'width' : window_height,
-								}).addClass('show-menu');
+								});
 		body.css({
 			'overflow' : 'hidden',
 		});
@@ -40,9 +40,9 @@ jQuery(document).ready(function($){
 			body.css({
 					'overflow' : 'auto',
 				});
-			responsive_container.removeClass('show-menu').css({
+			responsive_container.css({
 										'width' : menu_width,
-									});
+									}).removeClass('show-menu');
 
 			menu_toggler.show();
 	

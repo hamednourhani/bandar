@@ -3,52 +3,55 @@
 	<main class="site-main">
 
 
-		<div class="site-content ">
+		<div class="site-content">
 			<section class="layout">
-				<?php get_sidebar("top"); ?>
+
 				<div class="primary">
 
-						<div class="archive-title">
-							<h1 class="section-title ">
-								<?php single_term_title();?>
+					<div class="archive-title">
+
+						<header class="section-title">
+							<h1>
+								<?php single_cat_title();?>
 							</h1>
-						</div>
+						</header>
+
+					</div>
+
 
 					<?php if(have_posts()){ ?>
+						<?php while(have_posts()) { the_post();
+							$post_link = get_post_meta( get_the_ID(), '_itstar_item_link',1 );
+							if($post_link == ""){
+								$post_link =  get_the_permalink();
+							}
+							?>
 
-							<?php while(have_posts()) { the_post();	?>
+							<article class="hentry archive-article">
 
-								<article class="hentry archive-article post-archive">
+								<div class="featured-image">
+									<a href="<?php echo $post_link; ?>">
+										<?php the_post_thumbnail('post-thumb'); ?>
+									</a>
+								</div>
 
-									<div class="featured-image">
-										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail('video-larg-thumb'); ?>
+
+								<main class="article-body">
+									<h3 class="article-title">
+										<a href="<?php echo $post_link; ?>">
+											<?php the_title(); ?>
 										</a>
-									</div>
+									</h3>
+									<?php the_excerpt(); ?>
+									<?php get_template_part('library/post','meta');?>
+								</main>
 
-									<header class="article-title">
-										<a href="<?php echo the_permalink(); ?>">
-											<h3><?php the_title(); ?></h3>
-										</a>
-									</header>
-
-									<main class="article-body">
-
-										<?php the_excerpt(); ?>
-
-									</main>
-									<footer class="article-footer">
-										<?php get_template_part('library/post','meta');?>
-									</footer>
-								</article>
-							<?php } ?>
-
+							</article>
+						<?php } ?>
 					<?php } ?>
-
 					<nav class="pagination">
 						<?php itstar_pagination(); ?>
 					</nav>
-
 				</div><!-- primary -->
 
 				<div class="secondary">
@@ -57,6 +60,7 @@
 
 
 			</section>
+			<?php get_template_part('library/last','products');?>
 		</div>
 
 	</main>

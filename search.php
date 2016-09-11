@@ -5,7 +5,7 @@
 		
 		<div class="site-content">
 			<section class="layout">
-				<?php get_sidebar("top"); ?>
+
 				<div class="primary">
 
 						<div class="archive-title">
@@ -27,24 +27,21 @@
 
 								<div class="featured-image">
 									<a href="<?php echo $post_link; ?>">
-										<?php the_post_thumbnail('video-larg-thumb'); ?>
+										<?php the_post_thumbnail('post-thumb'); ?>
 									</a>
 								</div>
 
-								<header class="article-title">
-									<a href="<?php echo $post_link; ?>">
-										<h3><?php the_title(); ?></h3>
-									</a>
-								</header>
 
 								<main class="article-body">
-
+									<h3 class="article-title">
+										<a href="<?php echo $post_link; ?>">
+											<?php the_title(); ?>
+										</a>
+									</h3>
 									<?php the_excerpt(); ?>
-
-								</main>
-								<footer class="article-footer">
 									<?php get_template_part('library/post','meta');?>
-								</footer>
+								</main>
+								
 							</article>
 						<?php } ?>
 					<?php } ?>		
@@ -59,6 +56,7 @@
 				
 				
 			</section>
+			<?php get_template_part('library/last','products');?>
 		</div>
 		
 	</main>

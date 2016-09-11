@@ -23,6 +23,11 @@
 
             <div class="items-list">
                 <section class="layout">
+                    <div class="section-title">
+                        <h4>
+                            <?php echo __('Our Products','itstar');?>
+                        </h4>
+                    </div>
                     <?php foreach ($items as $item) { ?>
 
                         <a class="item-unit"  href="<?php echo get_permalink($item->ID); ?>">

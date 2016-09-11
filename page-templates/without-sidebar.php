@@ -20,7 +20,11 @@ get_header(); ?>
 
                 <div class="site-content ">
                     <section class="layout">
-
+                        <header class="section-title">
+                            <h1>
+                                <?php the_title();?>
+                            </h1>
+                        </header>
                         <div class="primary">
 
 
@@ -40,6 +44,7 @@ get_header(); ?>
 
 
                     </section>
+                    <?php get_template_part('library/last','products');?>
                 </div>
             <?php } ?>
 

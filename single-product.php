@@ -6,18 +6,22 @@
 
 
 
-                <div class="site-content"> 
+                <div class="site-content">
+                    <div class="banner-wrapper">
+                        <?php get_template_part('library/banner','maker');?>
+                    </div>
+
                     <section class="layout">
                         <?php get_sidebar("top"); ?>
                         <div class="primary">
 
 
                             <article class="hentry single-article">
-                                
 
-                                <header class="article-title">
-                                    <h1 class="section-title">
-                                        <?php the_title(); ?>
+
+                                <header class="section-title">
+                                    <h1>
+                                        <?php the_title();?>
                                     </h1>
                                 </header>
                                 <main class="article-body">
@@ -40,6 +44,7 @@
                             <?php get_sidebar(); ?>
                         </div><!-- secondary -->
                     </section>
+                    <?php get_template_part('library/last','products');?>
                 </div>
             <?php } ?>
 
@@ -51,6 +56,7 @@
                         <?php get_sidebar(); ?>
                     </div><!-- secondary -->
                 </section>
+                <?php get_template_part('library/last','products');?>
             </div>
 
         <?php } ?>

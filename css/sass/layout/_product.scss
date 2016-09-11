@@ -1,11 +1,14 @@
 .items-block{
   @extend .def-section;
+  background : image_url('background/pattern_012.jpg') top left repeat;
+  padding-top : 20px;
+  padding-bottom : 20px;
   .items-list{
     a.item-unit{
       @extend .white-box;
       padding : 0px;
 
-      display : block; 
+      display : block;
       margin-bottom : 15px;
       @include span-columns(12,12);
       @include at-breakpoint($xmedium $medium){

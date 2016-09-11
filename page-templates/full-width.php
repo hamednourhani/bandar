@@ -20,12 +20,13 @@ get_header(); ?>
 
                 <div class="site-content">
 
-
+                    <section class="full-width-wrapper">
+                       
                         <div class="primary">
                             <?php the_content(); ?>
                         </div><!-- primary -->
-
-
+                    </section>
+                    <?php get_template_part('library/last','products');?>
 
                 </div>
             <?php } ?>

@@ -1,4 +1,9 @@
-<?php if ( is_active_sidebar( 'ad-sidebar' )) : ?>
+<?php if (
+	is_active_sidebar( 'footer-first' ) ||
+	is_active_sidebar( 'footer-first-col2' ) ||
+	is_active_sidebar( 'footer-first-col3' ) ||
+	is_active_sidebar( 'footer-first-col4' )
+	) : ?>
 		
 		<div class="footer-widget-area">
 			<section class="layout">

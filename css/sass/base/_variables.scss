@@ -149,9 +149,58 @@ $glassyWhite : rgba(255, 255, 255, 0.85);
 	margin-top : 40px;
 }
 .section-title{
-	h1,h2,h3,h4 {
-
+	margin-bottom : 20px;
+	padding-left : 20px;
+	display: block;
+	overflow: hidden;
+	h1,h2,h3,h4{
+		display : inline-block;
+		border-bottom : 1px dashed $grey3;
+		margin : 10px auto 0px;
+		font-size : 140%;
+		padding :{
+			left : 30px;
+			right : 10px;
+			bottom : 10px;
+			top : 10px;
+		}
+		color : $navy;
+		position : relative;
+		&:before{
+			display: block;
+			content: "";
+			position: absolute;
+			top: 16px;
+			left: 3px;
+			border: 3px solid $skyblue;
+			height: 15px;
+			width: 15px;
+			transform: rotate(10deg);
+		}
+		&:after{
+			display: block;
+			content: "";
+			position: absolute;
+			top: 13px;
+			left: -3px;
+			border: 3px solid $green;
+			height: 15px;
+			width: 15px;
+			transform: rotate(-20deg);
+		}
 	}
+}
+
+//---------------------full-width--------------------
+
+.full-width-wrapper {
+	*zoom: 1;
+	width : 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 }
 //---------------------tooltip--------------------
 .bottom-tooltip {
