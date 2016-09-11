@@ -391,7 +391,7 @@ function itstar_search_form( $form ) {
     if(ICL_LANGUAGE_CODE == 'en' || ICL_LANGUAGE_CODE == 'it'){
         $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
           <div>
-              <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+              <label class="screen-reader-text" for="s">' . __( 'Search for:','itstar' ) . '</label>
               <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__("Search...","itstar").'"/>
                <span class="searchButton"><i class="fa fa-search"></i></span>
               <input type="hidden" name="lang" value="'.ICL_LANGUAGE_CODE.'"/>
@@ -400,7 +400,7 @@ function itstar_search_form( $form ) {
     } else {
         $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
           <div>
-              <label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+              <label class="screen-reader-text" for="s">' . __( 'Search for:','itstar' ) . '</label>
               <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.__("Search...","itstar").'"/>
               <span class="searchButton"><i class="fa fa-search"></i></span>
           </div>

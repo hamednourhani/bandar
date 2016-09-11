@@ -1021,7 +1021,7 @@ body {
   /* line 23, ../sass/rtl/layout/_header.scss */
   .hero .menu-search-area form.searchform input#s {
   padding-left: 40px;
-  padding-right: 0px; }
+  padding-right: 10px; }
 /* line 32, ../sass/rtl/layout/_header.scss */
 .hero a.menu-toggler {
   float: left; }
@@ -1113,7 +1113,7 @@ nav.main-menu {
 /* line 27, ../sass/rtl/layout/_sidebar.scss */
 .secondary aside.widget.widget_search form.searchform input#s {
   padding-left: 40px;
-  padding-right: 0px; }
+  padding-right: 10px; }
 /* line 39, ../sass/rtl/layout/_sidebar.scss */
 .secondary aside.widget.widget_last_product_widget ul li a div {
   float: right; }
@@ -1297,7 +1297,8 @@ nav.main-menu {
 
 /* line 1, ../sass/rtl/modules/_forms.scss */
 input#s {
-  line-height: 1.3; }
+  line-height: 1.3;
+  padding-right: 10px; }
 
 /* table style */
 /* line 3, ../sass/rtl/modules/_others.scss */
