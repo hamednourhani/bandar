@@ -1331,6 +1331,10 @@ input#s {
   line-height: 1.3;
   padding-right: 10px; }
 
+/* line 5, sass/rtl/modules/_forms.scss */
+.wpcf7 {
+  direction: rtl !important; }
+
 /* table style */
 /* line 3, sass/rtl/modules/_others.scss */
 .furniture-wrapper {

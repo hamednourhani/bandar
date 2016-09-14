@@ -2210,6 +2210,10 @@ input#s {
   padding-top: 0;
   padding-bottom: 0; }
 
+/* line 22, sass/modules/_forms.scss */
+.wpcf7 {
+  direction: ltr !important; }
+
 /* table style */
 /* line 3, sass/modules/_others.scss */
 .furniture-wrapper {
