@@ -1,11 +1,8 @@
 <?php
 /**
  * Template Name: First Page
- *
- *
  */
-get_header();
-?>
+get_header(); ?>
 
     <main class="site-main">
                 <div class="site-content full-width">
@@ -15,7 +12,7 @@ get_header();
                     </div>
                          <?php get_template_part('library/last','products');?>
 
-                        <section class="full-width-wrapper">
+                            <section class="full-width-wrapper">
                             <div class="primary">
                                 <?php
                                     if(have_posts()){ ?>
@@ -30,6 +27,8 @@ get_header();
                                 <?php  }  ?>
                             </div><!-- primary -->
                         </section>
+
+                        <?php get_template_part('library/partners','carousel');?>
                 </div>
     </main>
 <?php get_footer(); ?>

@@ -54,7 +54,35 @@ jQuery(document).ready(function($){
 
 	if(typeof $.fn.owlCarousel !== 'undefined') {
 		
-		var best_owl = $('.best-owl').owlCarousel({
+		// var best_owl = $('.best-owl').owlCarousel({
+		// 	margin:1,
+		// 	responsiveClass: true,
+		// 	nav: false,
+		// 	loop: true,
+		// 	mouseDrag: true,
+		// 	touchDrag: true,
+		// 	autoplayTimeout : 2000,
+		// 	autoplay : true,
+		// 	autoplayHoverPause : true,
+		// 	autoplaySpeed : 1000,
+		// 	responsive: {
+		// 		0: {
+		// 			items: 1,
+		// 		},
+		// 		400: {
+		// 			items: 3,
+		// 		},
+		// 		700: {
+		// 			items: 4,
+		// 		},
+		// 		1000: {
+		// 			items: 4,
+		// 		},
+        //
+		// 	}
+		// });
+
+		var last_owl = $('.partners-owl').owlCarousel({
 			margin:1,
 			responsiveClass: true,
 			nav: false,
@@ -67,7 +95,7 @@ jQuery(document).ready(function($){
 			autoplaySpeed : 1000,
 			responsive: {
 				0: {
-					items: 1,
+					items: 2,
 				},
 				400: {
 					items: 3,
@@ -76,35 +104,7 @@ jQuery(document).ready(function($){
 					items: 4,
 				},
 				1000: {
-					items: 4,
-				},
-
-			}
-		});
-
-		var last_owl = $('.last-owl').owlCarousel({
-			margin:1,
-			responsiveClass: true,
-			nav: false,
-			loop: true,
-			mouseDrag: true,
-			touchDrag: true,
-			autoplayTimeout : 2000,
-			autoplay : true,
-			autoplayHoverPause : true,
-			autoplaySpeed : 1000,
-			responsive: {
-				0: {
-					items: 1,
-				},
-				400: {
-					items: 3,
-				},
-				700: {
-					items: 4,
-				},
-				1000: {
-					items: 4,
+					items: 6,
 				},
 
 			}

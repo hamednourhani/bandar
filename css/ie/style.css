@@ -2468,6 +2468,59 @@ nav.pagination {
       background-color: #69CD72;
       color: #F8F8F8; }
 
+/* line 1, ../sass/modules/_carousel.scss */
+.feature-posts {
+  position: relative;
+  min-height: 170px;
+  background-color: #FFFFFF; }
+  /* line 5, ../sass/modules/_carousel.scss */
+  .feature-posts .section-title {
+    text-align: center; }
+  /* line 11, ../sass/modules/_carousel.scss */
+  .feature-posts #NextPageBtnLast, .feature-posts #PrevPageBtnLast,
+  .feature-posts #NextPageBtnBest, .feature-posts #PrevPageBtnBest {
+    position: absolute;
+    top: 120px; }
+    /* line 16, ../sass/modules/_carousel.scss */
+    .feature-posts #NextPageBtnLast i:before, .feature-posts #PrevPageBtnLast i:before,
+    .feature-posts #NextPageBtnBest i:before, .feature-posts #PrevPageBtnBest i:before {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 160%;
+      background-color: #FFFFFF;
+      color: #d1d1d1;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      border-radius: 30px; }
+    /* line 26, ../sass/modules/_carousel.scss */
+    .feature-posts #NextPageBtnLast:hover i:before, .feature-posts #PrevPageBtnLast:hover i:before,
+    .feature-posts #NextPageBtnBest:hover i:before, .feature-posts #PrevPageBtnBest:hover i:before {
+      color: #fb2125; }
+  /* line 31, ../sass/modules/_carousel.scss */
+  .feature-posts #NextPageBtnLast,
+  .feature-posts #NextPageBtnBest {
+    right: -1%; }
+  /* line 35, ../sass/modules/_carousel.scss */
+  .feature-posts #PrevPageBtnLast,
+  .feature-posts #PrevPageBtnBest {
+    left: -1%; }
+  /* line 39, ../sass/modules/_carousel.scss */
+  .feature-posts .feature-posts-wrapper {
+    direction: ltr;
+    position: absolute;
+    width: 97%; }
+    /* line 45, ../sass/modules/_carousel.scss */
+    .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid {
+      text-align: center;
+      display: block;
+      padding: 20px 10px;
+      vertical-align: middle; }
+      /* line 50, ../sass/modules/_carousel.scss */
+      .feature-posts .feature-posts-wrapper .feature-posts-inner .page-grid img {
+        max-width: 100%;
+        height: 40px;
+        vertical-align: middle; }
+
 /* line 1, ../sass/modules/_multilangual.scss */
 #lang_sel_list {
   float: right;
