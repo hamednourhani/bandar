@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wordpress theme\n"
-"POT-Creation-Date: 2016-09-11 17:13+0330\n"
-"PO-Revision-Date: 2016-09-11 17:14+0330\n"
+"POT-Creation-Date: 2016-09-14 09:12+0330\n"
+"PO-Revision-Date: 2016-09-14 09:12+0330\n"
 "Last-Translator: \n"
 "Language-Team: iTstar <itstar@gmail.com>\n"
 "Language: fa\n"
@@ -572,6 +572,10 @@ msgstr "لوگوی سایت در منوی موبایل"
 #: library/last-products.php:28
 msgid "Our Products"
 msgstr "محصولات ما"
+
+#: library/partners-carousel.php:8
+msgid "Our Partners"
+msgstr "شرکای تجاری ما"
 
 #: library/register-widgets.php:12
 msgid "Last product Widget"
