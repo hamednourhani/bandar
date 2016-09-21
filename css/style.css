@@ -1839,16 +1839,72 @@ nav.main-menu {
 /* line 36, sass/layout/_main.scss */
 .primary {
   padding-top: 30px; }
-  /* line 39, sass/layout/_main.scss */
+  /* line 38, sass/layout/_main.scss */
+  .primary .half {
+    width: 100%;
+    float: left;
+    margin-right: 1.53846%;
+    display: inline;
+    padding: 0px 20px; }
+    @media (min-width: 45em) {
+      /* line 38, sass/layout/_main.scss */
+      .primary .half {
+        width: 49.23077%;
+        float: left;
+        margin-right: 1.53846%; }
+        /* line 44, sass/layout/_main.scss */
+        .primary .half:nth-of-type(2n) {
+          float: right;
+          margin-right: 0; } }
+  /* line 49, sass/layout/_main.scss */
+  .primary ul.contact-list {
+    list-style: none !important;
+    list-style-type: none !important; }
+    /* line 53, sass/layout/_main.scss */
+    .primary ul.contact-list li {
+      display: block;
+      position: relative;
+      border-bottom: 1px dashed #d1d1d1;
+      padding-bottom: 5px;
+      margin-bottom: 5px; }
+      /* line 59, sass/layout/_main.scss */
+      .primary ul.contact-list li:before {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -30px;
+        font-family: FontAwesome;
+        font-size: 120%;
+        color: #3498DB; }
+      /* line 68, sass/layout/_main.scss */
+      .primary ul.contact-list li.address:before {
+        content: "\f041"; }
+      /* line 71, sass/layout/_main.scss */
+      .primary ul.contact-list li.phone:before {
+        content: "\f095"; }
+      /* line 74, sass/layout/_main.scss */
+      .primary ul.contact-list li.fax:before {
+        content: "\f1ac"; }
+      /* line 77, sass/layout/_main.scss */
+      .primary ul.contact-list li.email:before {
+        content: "\f0e0"; }
+      /* line 80, sass/layout/_main.scss */
+      .primary ul.contact-list li:last-of-type {
+        border-bottom: 0px;
+        margin-bottom: 0px; }
+  /* line 87, sass/layout/_main.scss */
   .primary article.single-article p {
     padding: 10px 15px; }
-  /* line 44, sass/layout/_main.scss */
+  /* line 92, sass/layout/_main.scss */
   .primary .page-content-desc p {
     padding: 10px 15px; }
-  /* line 49, sass/layout/_main.scss */
+  /* line 95, sass/layout/_main.scss */
+  .primary .page-content-desc ul {
+    list-style: disc; }
+  /* line 103, sass/layout/_main.scss */
   .primary .archive-title form.searchform {
     position: relative; }
-    /* line 52, sass/layout/_main.scss */
+    /* line 106, sass/layout/_main.scss */
     .primary .archive-title form.searchform label {
       display: inline-block;
       padding: 9px 0px;
@@ -1857,7 +1913,7 @@ nav.main-menu {
       font-size: 120%;
       color: #16242E;
       font-weight: 600; }
-    /* line 62, sass/layout/_main.scss */
+    /* line 116, sass/layout/_main.scss */
     .primary .archive-title form.searchform input#s {
       background-color: rgba(255, 255, 255, 0.85);
       border: 0px;
@@ -1870,10 +1926,10 @@ nav.main-menu {
       width: calc(100% - 110px);
       float: right;
       font-size: 120%; }
-      /* line 75, sass/layout/_main.scss */
+      /* line 129, sass/layout/_main.scss */
       .primary .archive-title form.searchform input#s:focus {
         background-color: #E6E7E7; }
-    /* line 79, sass/layout/_main.scss */
+    /* line 133, sass/layout/_main.scss */
     .primary .archive-title form.searchform span.searchButton {
       position: absolute;
       top: 7px;
@@ -1881,10 +1937,10 @@ nav.main-menu {
       font-size: 160%;
       color: #d1d1d1;
       cursor: pointer; }
-      /* line 86, sass/layout/_main.scss */
+      /* line 140, sass/layout/_main.scss */
       .primary .archive-title form.searchform span.searchButton:hover {
         color: #69CD72; }
-  /* line 94, sass/layout/_main.scss */
+  /* line 148, sass/layout/_main.scss */
   .primary .archive-article {
     overflow: hidden;
     width: 100%;
@@ -1893,32 +1949,35 @@ nav.main-menu {
     padding-bottom: 10px;
     margin-right: 15px;
     margin-left: 15px; }
-    /* line 102, sass/layout/_main.scss */
+    /* line 156, sass/layout/_main.scss */
     .primary .archive-article .featured-image {
       float: left;
       margin-right: 15px; }
-      /* line 105, sass/layout/_main.scss */
+      /* line 159, sass/layout/_main.scss */
       .primary .archive-article .featured-image img {
         background-color: #d1d1d1;
         padding: 5px; }
-        /* line 109, sass/layout/_main.scss */
+        /* line 163, sass/layout/_main.scss */
         .primary .archive-article .featured-image img:hover {
           background-color: #3498DB; }
-    /* line 115, sass/layout/_main.scss */
+    /* line 169, sass/layout/_main.scss */
     .primary .archive-article .article-body {
       float: left;
       width: calc(100% - 170px);
       overflow: hidden; }
-      /* line 119, sass/layout/_main.scss */
+      /* line 173, sass/layout/_main.scss */
       .primary .archive-article .article-body .article-title {
         margin: 0px;
         margin-top: 10px; }
-        /* line 120, sass/layout/_main.scss */
+        /* line 174, sass/layout/_main.scss */
         .primary .archive-article .article-body .article-title a {
           color: #3498DB; }
-      /* line 126, sass/layout/_main.scss */
+      /* line 180, sass/layout/_main.scss */
       .primary .archive-article .article-body p {
         margin: 5px; }
+      /* line 183, sass/layout/_main.scss */
+      .primary .archive-article .article-body ul {
+        list-style: disc; }
 
 /* line 1, sass/layout/_product.scss */
 .items-block {
@@ -2213,6 +2272,13 @@ input#s {
 /* line 22, sass/modules/_forms.scss */
 .wpcf7 {
   direction: ltr !important; }
+
+/* line 26, sass/modules/_forms.scss */
+.wpcf7-form input {
+  padding: 5px 10px; }
+/* line 29, sass/modules/_forms.scss */
+.wpcf7-form p {
+  padding: 0px; }
 
 /* table style */
 /* line 3, sass/modules/_others.scss */

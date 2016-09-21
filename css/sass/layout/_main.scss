@@ -35,6 +35,54 @@
 //---------------------Primary-----------------------
 .primary {
   padding-top : 30px;
+  .half{
+    @include span-columns(12,12);
+    padding : 0px 20px;
+
+    @include at-breakpoint($medium){
+      @include span-columns(6,12);
+      &:nth-of-type(2n){
+        @include omega;
+      }
+    }
+  }
+  ul.contact-list{
+    list-style: none !important;
+    list-style-type: none !important;
+
+    li{
+      display: block;
+      position: relative;
+      border-bottom : 1px dashed $grey3;
+      padding-bottom : 5px;
+      margin-bottom : 5px;
+      &:before{
+        display : block;
+        position : absolute;
+        top : 0px;
+        left : -30px;
+        font-family: FontAwesome;
+        font-size : 120%;
+        color : $skyblue;
+      }
+      &.address:before{
+        content : "\f041";
+      }
+      &.phone:before{
+        content : "\f095";
+      }
+      &.fax:before{
+        content : "\f1ac";
+      }
+      &.email:before{
+        content : "\f0e0";
+      }
+      &:last-of-type{
+        border-bottom : 0px;
+        margin-bottom : 0px;
+      }
+    }
+  }
   article.single-article{
     p{
       padding : 10px 15px;
@@ -43,6 +91,12 @@
   .page-content-desc{
     p{
       padding : 10px 15px;
+    }
+    ul{
+      list-style: disc;
+
+      li{
+      }
     }
   }
   .archive-title{
@@ -125,6 +179,11 @@
       }
       p{
         margin : 5px;
+      }
+      ul{
+        list-style: disc;
+        li{
+        }
       }
 
     }
