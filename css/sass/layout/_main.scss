@@ -83,6 +83,9 @@
       }
     }
   }
+  .fullwidth{
+    @include span-columns(12,12);
+  }
   article.single-article{
     p{
       padding : 10px 15px;

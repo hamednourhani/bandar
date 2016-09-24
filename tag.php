@@ -60,7 +60,6 @@
 
 
 			</section>
-			<?php get_template_part('library/last','products');?>
 		</div>
 
 	</main>

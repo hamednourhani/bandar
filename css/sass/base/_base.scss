@@ -109,10 +109,16 @@ article,aside{
 }
 
 .gallery-item {
+	@extend .def-transition;
 	float: left;
 	margin: 0 4px 4px 0;
 	overflow: hidden;
 	position: relative;
+	border : 3px solid $grey3;
+	margin-bottom : -3px;
+	&:hover{
+		border-color : $skyblue
+	}
 }
 
 .gallery-columns-1.gallery-size-medium,
@@ -187,19 +193,17 @@ article,aside{
 .gallery-caption {
 	background-color: rgba(0, 0, 0, 0.7);
 	box-sizing: border-box;
-	color: #fff;
+	color: $white;
 	font-size: 14px;
 	line-height: 1.3;
 	margin: 0;
 	max-height: 50%;
-	opacity: 0;
+	opacity: 1;
 	padding: 2px 8px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	text-align: left;
-	-webkit-transition: opacity 400ms ease;
-	transition:         opacity 400ms ease;
 	width: 100%;
 }
 
@@ -342,6 +346,9 @@ img.alignnone {
 	font-style: italic;
 	font-weight: 300;
 	margin: 0 0 24px;
+}
+.wp-caption-text{
+	color : $white;
 }
 
 div.wp-caption.alignright img[class*="wp-image-"] {

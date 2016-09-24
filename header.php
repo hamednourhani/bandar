@@ -113,12 +113,12 @@
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 						<ul>
 							<li class="contact-title"><?php echo __('Email','itstar');?></li>
-							<li>info@example.com</li>
+							<li>info@bandarcooling.com</li>
 						</ul>
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						<ul>
 							<li class="contact-title"><?php echo __('Phone','itstar');?></li>
-							<li>98211234567</li>
+							<li>021-77526577-78</li>
 						</ul>
 
 					</div>

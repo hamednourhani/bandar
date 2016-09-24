@@ -44,7 +44,6 @@
                             <?php get_sidebar(); ?>
                         </div><!-- secondary -->
                     </section>
-                    <?php get_template_part('library/last','products');?>
                 </div>
             <?php } ?>
 
@@ -56,7 +55,6 @@
                         <?php get_sidebar(); ?>
                     </div><!-- secondary -->
                 </section>
-                <?php get_template_part('library/last','products');?>
             </div>
 
         <?php } ?>

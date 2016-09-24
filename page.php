@@ -36,7 +36,6 @@ get_header();
 				</div><!-- secondary -->
 			</section>
 
-			<?php get_template_part('library/last','products');?>
 
 		</div>
 	</main>
