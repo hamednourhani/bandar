@@ -1497,11 +1497,25 @@ img.wp-smiley,
         .hero .contact-wrapper ul li.contact-title {
           color: #16242E;
           font-size: 100%; }
+        /* line 171, ../sass/layout/_header.scss */
+        .hero .contact-wrapper ul li img {
+          text-align: center;
+          vertical-align: middle;
+          display: none;
+          margin-top: 10px; }
+          /* line 171, ../sass/layout/_header.scss */
+          .hero .contact-wrapper ul li img {
+  display: inline-block;
+  max-width: 110px; }
+      /* line 188, ../sass/layout/_header.scss */
+      .hero .contact-wrapper ul.bicool-container {
+        padding: 0px;
+        text-align: center; }
 
-/* line 174, ../sass/layout/_header.scss */
+/* line 195, ../sass/layout/_header.scss */
 nav.main-menu {
   width: 100%; }
-  /* line 177, ../sass/layout/_header.scss */
+  /* line 198, ../sass/layout/_header.scss */
   nav.main-menu ul.main-nav {
     z-index: 999;
     background-color: #16242E;
@@ -1512,10 +1526,10 @@ nav.main-menu {
     margin-top: -25px;
     position: relative;
     display: none; }
-    /* line 177, ../sass/layout/_header.scss */
+    /* line 198, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav {
   display: block; }
-    /* line 191, ../sass/layout/_header.scss */
+    /* line 212, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav:before {
       -moz-transition: all 2s ease-in-out 0s;
       -o-transition: all 2s ease-in-out 0s;
@@ -1531,23 +1545,23 @@ nav.main-menu {
       height: 2px;
       width: 0px;
       background-color: #69CD72; }
-    /* line 204, ../sass/layout/_header.scss */
+    /* line 225, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav:hover:before {
       right: 100%;
       width: 100%; }
-    /* line 209, ../sass/layout/_header.scss */
+    /* line 230, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav a {
       display: block;
       padding: 10px 15px;
       color: #FFFFFF; }
-      /* line 215, ../sass/layout/_header.scss */
+      /* line 236, ../sass/layout/_header.scss */
       nav.main-menu ul.main-nav a:hover {
         background-color: #69CD72; }
-    /* line 219, ../sass/layout/_header.scss */
+    /* line 240, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav li {
       position: relative;
       display: inline-block; }
-      /* line 223, ../sass/layout/_header.scss */
+      /* line 244, ../sass/layout/_header.scss */
       nav.main-menu ul.main-nav li.menu-item-has-children:after {
         position: absolute;
         top: 10px;
@@ -1555,12 +1569,12 @@ nav.main-menu {
         color: #FFFFFF;
         content: "\f0d7";
         font-family: FontAwesome; }
-      /* line 233, ../sass/layout/_header.scss */
+      /* line 254, ../sass/layout/_header.scss */
       nav.main-menu ul.main-nav li:hover > ul.sub-menu {
         filter: alpha(opacity=100);
         visibility: visible;
         top: 102%; }
-    /* line 241, ../sass/layout/_header.scss */
+    /* line 262, ../sass/layout/_header.scss */
     nav.main-menu ul.main-nav ul.sub-menu {
       margin: 0px;
       padding: 0px;
@@ -1571,10 +1585,10 @@ nav.main-menu {
       position: absolute;
       top: 120%;
       left: 0px; }
-      /* line 253, ../sass/layout/_header.scss */
+      /* line 274, ../sass/layout/_header.scss */
       nav.main-menu ul.main-nav ul.sub-menu li {
         display: block; }
-        /* line 256, ../sass/layout/_header.scss */
+        /* line 277, ../sass/layout/_header.scss */
         nav.main-menu ul.main-nav ul.sub-menu li.menu-item-has-children:after {
           position: absolute;
           top: 10px;
@@ -1582,14 +1596,14 @@ nav.main-menu {
           color: #FFFFFF;
           content: "\f0da";
           font-family: FontAwesome; }
-        /* line 265, ../sass/layout/_header.scss */
+        /* line 286, ../sass/layout/_header.scss */
         nav.main-menu ul.main-nav ul.sub-menu li ul.sub-menu {
           top: 0px;
           left: 120%; }
-        /* line 270, ../sass/layout/_header.scss */
+        /* line 291, ../sass/layout/_header.scss */
         nav.main-menu ul.main-nav ul.sub-menu li:hover > ul.sub-menu {
           left: 100%; }
-  /* line 278, ../sass/layout/_header.scss */
+  /* line 299, ../sass/layout/_header.scss */
   nav.main-menu div.responsive-menu {
     position: fixed;
     overflow-y: auto;
@@ -1601,50 +1615,50 @@ nav.main-menu {
     color: #FFFFFF;
     z-index: 999;
     display: block; }
-    /* line 289, ../sass/layout/_header.scss */
+    /* line 310, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu a {
       color: #FFFFFF; }
-      /* line 291, ../sass/layout/_header.scss */
+      /* line 312, ../sass/layout/_header.scss */
       nav.main-menu div.responsive-menu a:hover {
         color: #69CD72; }
-    /* line 278, ../sass/layout/_header.scss */
+    /* line 299, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu {
   display: none; }
-    /* line 300, ../sass/layout/_header.scss */
+    /* line 321, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu.show-menu {
       right: 0px; }
-    /* line 303, ../sass/layout/_header.scss */
+    /* line 324, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu a.close-responsive {
       float: right;
       display: inline-block;
       padding: 10px; }
-      /* line 307, ../sass/layout/_header.scss */
+      /* line 328, ../sass/layout/_header.scss */
       nav.main-menu div.responsive-menu a.close-responsive i {
         cursor: pointer; }
-        /* line 309, ../sass/layout/_header.scss */
+        /* line 330, ../sass/layout/_header.scss */
         nav.main-menu div.responsive-menu a.close-responsive i:before {
           font-size: 160%; }
-    /* line 314, ../sass/layout/_header.scss */
+    /* line 335, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu a.responsive-logo {
       float: right;
       display: inline-block;
       width: 85%;
       padding: 10px; }
-      /* line 319, ../sass/layout/_header.scss */
+      /* line 340, ../sass/layout/_header.scss */
       nav.main-menu div.responsive-menu a.responsive-logo img {
         margin: auto;
         max-width: 120px; }
-    /* line 325, ../sass/layout/_header.scss */
+    /* line 346, ../sass/layout/_header.scss */
     nav.main-menu div.responsive-menu ul.responsive-nav {
       padding: 10px; }
-      /* line 327, ../sass/layout/_header.scss */
+      /* line 348, ../sass/layout/_header.scss */
       nav.main-menu div.responsive-menu ul.responsive-nav li {
         display: block; }
-        /* line 329, ../sass/layout/_header.scss */
+        /* line 350, ../sass/layout/_header.scss */
         nav.main-menu div.responsive-menu ul.responsive-nav li a {
           padding: 10px;
           font-size: 110%; }
-        /* line 333, ../sass/layout/_header.scss */
+        /* line 354, ../sass/layout/_header.scss */
         nav.main-menu div.responsive-menu ul.responsive-nav li ul.sub-menu {
           margin: 0px;
           margin-left: 30px;

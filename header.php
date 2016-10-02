@@ -115,10 +115,11 @@
 							<li class="contact-title"><?php echo __('Email','itstar');?></li>
 							<li>info@bandarcooling.com</li>
 						</ul>
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						<ul>
-							<li class="contact-title"><?php echo __('Phone','itstar');?></li>
-							<li>021-77526577-78</li>
+						<ul class="bicool-container">
+							<li>
+								<img src="<?php echo get_template_directory_uri();?>/images/bicool.png"/>
+							</li>
+
 						</ul>
 
 					</div>
