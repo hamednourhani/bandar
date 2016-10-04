@@ -1,7 +1,11 @@
 .feature-posts{
   position: relative;
-  min-height : 170px;
+  min-height : 220px;
   background-color: $white;
+  padding : {
+    top : 20px;
+    bottom : 20px;
+  }
   .section-title{
     text-align: center;
     h4{
